@@ -1,4 +1,15 @@
 .mainButtons {
+    border: 0;
     cursor: pointer;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    padding: 15px 20px;
+    letter-spacing: 1px;
     background-color: #2b2b2b;
+    text-transform: uppercase;
+}
+.mainButtons:hover{
+    background-color: black;
+    transition: all 800ms ease;
 }

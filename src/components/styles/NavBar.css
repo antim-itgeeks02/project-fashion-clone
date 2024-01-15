@@ -8,6 +8,11 @@
     letter-spacing: 1px;
     margin: 2.5%;
     margin-bottom: 1.5%;
+    /* position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 123;
+    background-color: white; */
 }
 .navItem{
     padding: 0 10px;

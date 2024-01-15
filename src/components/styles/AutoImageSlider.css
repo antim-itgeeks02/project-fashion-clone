@@ -7,18 +7,27 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: all 0.7s ease;
 }
 
 .autoImageSliderContainer h2 {
     color: white;
     font-size: 40px;
+    margin: 10px;
 }
 
 .autoImageSliderContainer p {
     color: white;
     font-size: 18px;
+    margin: 10px;
 }
 
 .autoImageSliderButtons {
-    
+    border: 0;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    padding: 15px 20px;
+    letter-spacing: 1px;
 }

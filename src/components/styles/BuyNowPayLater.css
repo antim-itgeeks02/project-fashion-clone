@@ -1,0 +1,22 @@
+.buyNowPay{
+    background-image: url('https://fashionopolism-galleria.myshopify.com/cdn/shop/files/gallerie-008.jpg?v=1614313157&width=1200');
+    color: white;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 500px;
+}
+.buyNowPay h2{
+    font-size: 26px;
+    /* margin: 10px; */
+}
+.buyNowPay p{
+    font-size: 16px;
+    margin: 10px;
+}

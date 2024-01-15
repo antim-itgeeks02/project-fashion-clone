@@ -1,13 +1,14 @@
 import React from 'react'
 import { bannerData } from '../data/BannerData'
 import Button from './Button'
+import './styles/Category.css'
 
 const Category = () => {
   return (
-    <div>
+    <div className='banner'>
       {bannerData.map((banner, index) => {
         return (
-          <div key={index}>
+          <div className='bannerSmall' style={{ backgroundImage : `url(${banner.image})`}} key={index} >
             <h3>{banner.heading}</h3>
             <p>{banner.para}</p>
             <Button title={banner.name} />

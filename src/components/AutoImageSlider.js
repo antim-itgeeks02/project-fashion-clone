@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './styles/AutoImageSlider.css'
 import { imageData } from '../data/AutoImageSliderData'
-import Buttons from './Button';
 
 const AutoImageSlider = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -24,7 +23,7 @@ const AutoImageSlider = () => {
         <div style={{ backgroundImage: `url(${background})` }} className='autoImageSliderContainer'>
             <h2>{imageData[currentIndex].heading}</h2>
             <p>{imageData[currentIndex].para}</p>
-            <Buttons className='autoImageSliderButtons' title={imageData[currentIndex].name}/>
+            <button className='autoImageSliderButtons'>{imageData[currentIndex].name}</button>
         </div>
     )
 }

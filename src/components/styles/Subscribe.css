@@ -1,0 +1,14 @@
+.subscribe{
+    display: flex;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+}
+.leftDiv{
+    width: 50%;
+}
+.rightDiv{
+    width: 50%;
+}
