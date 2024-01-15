@@ -1,8 +1,24 @@
-.imageBig {
-    background-image: url('https://fashionopolism-galleria.myshopify.com/cdn/shop/files/gallerie-001.jpg?v=1614313030&width=1200');
+.autoImageSliderContainer {
     height: 100vh;
     width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.autoImageSliderContainer h2 {
+    color: white;
+    font-size: 40px;
+}
+
+.autoImageSliderContainer p {
+    color: white;
+    font-size: 18px;
+}
+
+.autoImageSliderButtons {
+    
 }
