@@ -1,0 +1,41 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    padding: 14px 3.5%;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 25%;
+}
+.icon{
+    /* margin-left: 0.8%; */
+    margin-right: 5%;
+    height: 15px;
+    width: 15px;
+}
+.advertisment{
+    display: flex;    
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    font-size: 0.84rem;
+}
+.arrowButtons{
+    height: 23px;
+    width: 23px;
+}
+.usd{
+    display: flex;
+    justify-content: flex-end;
+    width: 25%;
+}
+.usdIcon{
+    margin-left: 3%;
+    font-weight: 300;
+}

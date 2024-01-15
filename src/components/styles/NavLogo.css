@@ -1,0 +1,44 @@
+.navLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 40px;
+}
+.search{
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+.inputField{
+    border: 1px solid rgb(192, 187, 187);
+    outline: none;
+    border-right: none;
+    padding: 15px;
+    padding-right:18%;
+    font-size: 15px;
+}
+.searchButton{
+    background-color: white;
+    border: 1px solid rgb(192, 187, 187);
+    outline: none;
+    padding: 15px;
+    border-left: none;
+    font-size: 15px;
+}
+.imageDiv{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    height: auto;
+    max-width: 165px;
+}
+.cartDiv{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 6px;
+}

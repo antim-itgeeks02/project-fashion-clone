@@ -1,0 +1,21 @@
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    /* gap: 16px; */
+    letter-spacing: 1px;
+    margin: 2.5%;
+    margin-bottom: 1.5%;
+}
+.navItem{
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+.navItemArrow{
+    height: 18px;
+    width: 18px;
+}
