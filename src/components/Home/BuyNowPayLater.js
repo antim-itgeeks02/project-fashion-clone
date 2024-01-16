@@ -1,5 +1,5 @@
 import React from 'react'
-import './styles/BuyNowPayLater.css'
+import '../styles/Home/BuyNowPayLater.css'
 import Buttons from './Button'
 
 const BuyNowPayLater = () => {

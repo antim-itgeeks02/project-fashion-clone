@@ -8,7 +8,7 @@ const NavBar = () => {
     <div className='navBar'>
       {navBarData.map((nav, index) => {
         return (
-           nav.item === 'Shop' ? (<p className='navItem'>{nav.item}<MdKeyboardArrowDown className='navItemArrow'/></p>) : (<p className='navItem'>{nav.item}</p>) 
+           nav.item === 'Shop' ? (<p key={index} className='navItem'>{nav.item}<MdKeyboardArrowDown className='navItemArrow'/></p>) : (<p key={index} className='navItem'>{nav.item}</p>) 
         )
       })}
     </div>

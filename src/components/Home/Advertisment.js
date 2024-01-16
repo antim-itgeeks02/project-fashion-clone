@@ -1,5 +1,5 @@
 import React from 'react'
-import './styles/Advertisment.css'
+import '../styles/Home/Advertisment.css'
 import { MdOutlineWatch } from "react-icons/md";
 import { TbWorld } from "react-icons/tb";
 import { FaThumbsUp } from "react-icons/fa6";

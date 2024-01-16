@@ -1,7 +1,7 @@
 import React from 'react'
-import { bannerData } from '../data/BannerData'
+import { bannerData } from '../../data/BannerData'
 import Button from './Button'
-import './styles/Category.css'
+import '../styles/Home/Category.css'
 
 const Category = () => {
   return (

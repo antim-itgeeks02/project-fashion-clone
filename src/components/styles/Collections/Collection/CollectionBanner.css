@@ -1,0 +1,13 @@
+.collectioBanner{
+    background-image: url('https://fashionopolism-galleria.myshopify.com/cdn/shop/files/gallerie-008.jpg?v=1614313157&width=1200');
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.collectioBanner h1{
+    color: white;
+}

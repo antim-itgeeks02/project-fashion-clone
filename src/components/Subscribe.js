@@ -12,8 +12,8 @@ const Subscribe = () => {
                 <p>Signup for our newsletter to stay up to date on sales and events.</p>
             </div>
             <div className='rightDiv'>
-                <input placeholder='Enter Your Email Address' />
-                <div className='icons'>
+                <input placeholder='Enter Your Email Address' type='search' />
+                <div className='iconsSub'>
                     <FaFacebookF className='icon' />
                     <FaXTwitter className='icon' />
                     <FaInstagram className='icon' />

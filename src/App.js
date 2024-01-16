@@ -1,33 +1,27 @@
 import './App.css';
-import Advertisment from './components/Advertisment';
-import AutoImageSlider from './components/AutoImageSlider';
-import BrandsLogo from './components/BrandsLogo';
-import BuyNowPayLater from './components/BuyNowPayLater';
-import Category from './components/Category';
-import Features from './components/Features';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import NavBar from './components/NavBar';
 import NavLogo from './components/NavLogo';
-import ProductSlider from './components/ProductSlider';
-import ReviewSection from './components/ReviewSection';
 import Subscribe from './components/Subscribe';
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './components/Home';
+import Collection from './components/collections/Collection/Collection';
 
 function App() {
   return (
-    <>
-      <Header/>
-      <NavLogo/>
-      <NavBar/>
-      <Advertisment/>
-      <AutoImageSlider/>
-      <Features/>
-      <Category/>
-      <ProductSlider/>
-      <BrandsLogo/>
-      <BuyNowPayLater/>
-      <ReviewSection/>
-      <Subscribe/>
-    </>
+    <BrowserRouter>
+      <Header />
+      <NavLogo />
+      <NavBar />
+      <Collection/>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+      </Routes>
+      <Subscribe />
+      <Footer />
+    </BrowserRouter>
   );
 }
 

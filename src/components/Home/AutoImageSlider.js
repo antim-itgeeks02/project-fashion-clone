@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import './styles/AutoImageSlider.css'
-import { imageData } from '../data/AutoImageSliderData'
+import '../styles/Home/AutoImageSlider.css'
+import { imageData } from '../../data/AutoImageSliderData'
 
 const AutoImageSlider = () => {
     const [currentIndex, setCurrentIndex] = useState(0);

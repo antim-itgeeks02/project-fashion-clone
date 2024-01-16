@@ -1,5 +1,5 @@
 import React from 'react'
-import { productSliderData } from '../data/ProductSliderData'
+import { productSliderData } from '../../data/ProductSliderData'
 import Slider from './Slider'
 
 const ProductSlider = () => {

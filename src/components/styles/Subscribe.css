@@ -4,11 +4,36 @@
     color: white;
     align-items: center;
     justify-content: center;
-    padding: 70px;
+    padding: 60px;
+    letter-spacing: 1px;
 }
 .leftDiv{
     width: 50%;
 }
+.leftDiv h2{
+    font-size: 20px;
+}
+.leftDiv p{
+    font-size: 15px;
+    margin-top: 10px;
+}
 .rightDiv{
     width: 50%;
+}
+.rightDiv input{
+    width: 100%;
+    border: none;
+    background-color: black;
+    padding: 10px;
+    border-bottom: 2px solid white;
+    outline: none;
+    color: white;
+    font-size: medium;
+}
+::placeholder{
+    color: white;
+    font-size: medium;
+}
+.iconsSub{
+    margin: 20px 0;
 }
