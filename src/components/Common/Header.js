@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import './styles/Header.css'
-import { headerData } from '../data/HeaderData.js';
+import '../styles/Common/Header.css'
+import { headerData } from '../../data/HeaderData.js';
 import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";

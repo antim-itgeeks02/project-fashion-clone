@@ -1,4 +1,4 @@
-export const ShopBuyBrandData =[
+export const ShopByBrandData =[
     {image : 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/audemars-piguet-royal-oak-offshore-3.png?v=1447724959&width=1200',Brand : 'Audemars Piguet',item :'3 Items'},
     {image : 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/Breitling-cosmonaute.png?v=1447725296&width=1200',Brand : 'Breitling',item :'3 Items'},
     {image : 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/hublot-big-bang-2.png?v=1447725523&width=1200',Brand : 'Hublot',item :'3 Items'},

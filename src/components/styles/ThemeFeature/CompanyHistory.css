@@ -1,0 +1,29 @@
+.ourHistory{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    letter-spacing: 0.5px;
+    margin: 25px;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+.ourHistoryH2{
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+.ourHistoryDiv{
+    width: 80px;
+    border: 1.5px solid black;
+    margin-bottom: 30px;
+}
+.ourHistoryP{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 15px;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+}

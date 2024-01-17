@@ -19,6 +19,8 @@
     display: flex;
     align-items: center;
     gap: 1px;
+    text-decoration: none;
+    color: black;
 }
 .navItemArrow{
     height: 18px;

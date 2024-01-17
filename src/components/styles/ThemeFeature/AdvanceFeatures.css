@@ -1,0 +1,22 @@
+.advanceFeatures{
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 40px 13%;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+.advanceFeaturesIcons{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.advanceFeaturesIconsSpecial{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}

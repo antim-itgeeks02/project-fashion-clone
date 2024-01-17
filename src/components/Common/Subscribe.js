@@ -1,5 +1,5 @@
 import React from 'react'
-import './styles/Subscribe.css'
+import '../styles/Common/Subscribe.css'
 import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";

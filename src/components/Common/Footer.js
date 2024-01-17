@@ -1,17 +1,17 @@
 import React from 'react'
-import './styles/Footer.css'
-import { footerData } from '../data/FooterData'
+import '../styles/Common/Footer.css'
+import { footerData } from '../../data/FooterData'
 import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { LiaFlagUsaSolid } from "react-icons/lia";
 import { FaDollarSign } from "react-icons/fa";
-import { ReactComponent as VISA } from './svg/visa.svg';
-import { ReactComponent as MASTER } from './svg/master.svg';
-import { ReactComponent as AMERICAN } from './svg/american.svg';
-import { ReactComponent as PAYPAL } from './svg/paypal.svg';
-import { ReactComponent as UNK } from './svg/unk.svg';
-import { ReactComponent as DISCOVER } from './svg/discover.svg';
+import { ReactComponent as VISA } from '../svg/visa.svg';
+import { ReactComponent as MASTER } from '../svg/master.svg';
+import { ReactComponent as AMERICAN } from '../svg/american.svg';
+import { ReactComponent as PAYPAL } from '../svg/paypal.svg';
+import { ReactComponent as UNK } from '../svg/unk.svg';
+import { ReactComponent as DISCOVER } from '../svg/discover.svg';
 
 const Footer = () => {
     return (

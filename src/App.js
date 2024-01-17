@@ -1,13 +1,15 @@
 import './App.css';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import NavBar from './components/NavBar';
-import NavLogo from './components/NavLogo';
-import Subscribe from './components/Subscribe';
-
+import Footer from './components/Common/Footer';
+import Header from './components/Common/Header';
+import NavBar from './components/Common/NavBar';
+import NavLogo from './components/Common/NavLogo';
+import Subscribe from './components/Common/Subscribe';
+import Advertisment from './components/Common/Advertisment';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './components/Home';
-import Collection from './components/collections/Collection/Collection';
+import Home from './components/Pages/Home';
+import Collection from './components/Pages/Collection';
+import Blog from './components/Pages/Blog';
+import ThemeFeature from './components/Pages/ThemeFeature';
 
 function App() {
   return (
@@ -15,9 +17,12 @@ function App() {
       <Header />
       <NavLogo />
       <NavBar />
-      <Collection/>
+      <Advertisment />
       <Routes>
         <Route path='/' element={<Home/>} />
+        <Route path='/collections' element={<Collection/>} />
+        <Route path='/blogs/news' element={<Blog/>} />
+        <Route path='/pages/theme-features' element={<ThemeFeature/>} />
       </Routes>
       <Subscribe />
       <Footer />

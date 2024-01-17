@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../styles/Collections/Collection/CollectionBanner.css'
+import '../styles/Collections/Collection/CollectionBanner.css'
 const CollectionBanner = () => {
   return (
     <div className='collectioBanner'>

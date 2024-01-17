@@ -4,7 +4,3 @@ export const footerData = [
     { title: 'QUICK LINKS', list: [{ name: 'Audemars Piguet', path: './' }, { name: 'Breitling', path: './' }, {name : 'Hublot',path : './'},{name : 'IWC',path : './'},{name : 'Omega',path : './'},{name : 'Tag Heuer',path : './'}] },
     { title: 'RECENT POSTS', disc: 'A practical guide to watches Millionaires of the 21st Century What to Get That Special September Someone' }
 ]
-// ABOUT : [''],
-//      : [' ' , ' '],
-//     QUICK_LINKS : ['','','','','',''],
-//     : ['']

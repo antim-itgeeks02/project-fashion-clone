@@ -1,0 +1,12 @@
+.newsBanner{
+    background-image: url('https://fashionopolism-galleria.myshopify.com/cdn/shop/files/gallerie-005.jpg?v=1614313147&width=1200');
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 15px;
+}

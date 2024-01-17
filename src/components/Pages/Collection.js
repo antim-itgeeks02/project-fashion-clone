@@ -1,8 +1,6 @@
 import React from 'react'
-import '../../styles/Collections/Collection/Collection.css'
-import CollectionBanner from './CollectionBanner'
-import ShopBuyBrand from './ShopBuyBrand'
-
+import CollectionBanner from '../Collection/CollectionBanner'
+import ShopBuyBrand from '../Collection/ShopByBrand'
 
 const Collection = () => {
   return (

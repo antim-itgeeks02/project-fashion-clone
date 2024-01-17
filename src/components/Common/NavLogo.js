@@ -1,5 +1,5 @@
 import React from 'react'
-import './styles/NavLogo.css'
+import '../styles/Common/NavLogo.css'
 import { FaSearch } from "react-icons/fa";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 

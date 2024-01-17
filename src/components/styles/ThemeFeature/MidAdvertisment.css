@@ -1,0 +1,32 @@
+.midAdvertisment{
+    background-color: #faf4e8;
+    display: flex;
+    flex-direction: column;
+    padding: 3% 4%;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    line-height: 25px;
+}
+.MidAdvertismentHeadings{
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+.MidAdvertismentImage{
+    width: 615px;
+    height: 440px;
+}
+.midAdvertismentFirst{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.midAdvertismentSecond{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.midAdvertismentSecondSpecial{
+    text-align: end;
+}
