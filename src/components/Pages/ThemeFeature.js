@@ -4,6 +4,8 @@ import CompanyHistory from '../ThemeFeatures/CompanyHistory'
 import Benifits from '../ThemeFeatures/Benifits'
 import MidAdvertisment from '../ThemeFeatures/MidAdvertisment'
 import AdvanceFeatures from '../ThemeFeatures/AdvanceFeatures'
+import AllHighlights from '../ThemeFeatures/AllHighlights'
+import FaQ from '../ThemeFeatures/FaQ'
 
 const ThemeFeature = () => {
   return (
@@ -13,6 +15,8 @@ const ThemeFeature = () => {
         <Benifits/>
         <MidAdvertisment/>
         <AdvanceFeatures/>
+        <AllHighlights/>
+        <FaQ/>
     </>
   )
 }

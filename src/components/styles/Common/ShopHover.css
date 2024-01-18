@@ -1,0 +1,28 @@
+.shopHoverMain{
+    display: flex;
+    position: absolute;
+    background-color: white;
+    padding: 20px 20px;
+    margin: 0 3%;
+}
+.shopHoverImg{
+    height: 23%;
+    width: 23%;
+}
+.shopHoverAllDiv{
+    display: flex;
+    padding: 0 30px;
+    width: 70%;
+}
+.singleShopHoverDiv{
+    height: 100%;
+    width: 100%;
+    margin-right: 10%;
+}
+.singleShopHoverH{
+    margin-bottom: 5px;
+}
+.shoplist{
+    list-style: none;
+    padding: 3px 0;
+}

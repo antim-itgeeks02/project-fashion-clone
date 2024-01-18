@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.allAnchorsBlack{
+  text-decoration: none;
+  color: black;
+}
+.allAnchorsWhite{
+  text-decoration: none;
+  color: white;
+}

@@ -1,0 +1,6 @@
+export const footerData = [
+    { title: 'ABOUT', disc: 'Our products are inspired by the people and world around us. Beautiful, high quality goods that are designed especially for you. Discover our story and meet the people that make our brand what it is.' },
+    { title: 'EXPLORE', list: [{ name: 'About Us', path: '/pages/about-us' }, { name: 'Theme Features', path: '/pages/theme-features' }] },
+    { title: 'QUICK LINKS', list: [{ name: 'Audemars Piguet', path: '/collections/audemars-piguet' }, { name: 'Breitling', path: '/collections/breitling' }, {name : 'Hublot',path : '/collections/hublot'},{name : 'IWC',path : '/collections/iwc'},{name : 'Omega',path : '/collections/omega'},{name : 'Tag Heuer',path : '/collections/tag-heuer'}] },
+    { title: 'RECENT POSTS', list: [{ name: 'A practical guide to watches', path: '/blogs/news/a-practical-guide-to-watches' }, { name: 'Millionaires of the 21st Century', path: '/blogs/news/78257667-watches-of-monaco' },{name:'What to Get That Special September Someone',path:'/blogs/news/78257155-watches-of-wall-street'}] }
+]

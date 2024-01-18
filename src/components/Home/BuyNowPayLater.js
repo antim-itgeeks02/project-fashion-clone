@@ -7,7 +7,7 @@ const BuyNowPayLater = () => {
     <div className='buyNowPay'>
         <h2>BUY NOW PAY LATER</h2>
         <p>Flexible payment options available</p>
-        <Buttons title={'START SHOPPING'}/>
+        <Buttons title={'START SHOPPING'} path={'/collections'}/>
     </div>
   )
 }

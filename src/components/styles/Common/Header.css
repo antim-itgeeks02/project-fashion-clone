@@ -16,9 +16,11 @@
 .icon{
     /* margin-left: 0.8%; */
     margin-right: 5%;
-    height: 15px;
-    width: 15px;
+    text-decoration: none;
+    color: white;
+
 }
+
 .advertisment{
     display: flex;    
     align-items: center;

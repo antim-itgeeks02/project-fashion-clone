@@ -1,5 +1,5 @@
 import React from 'react'
-import { bannerData } from '../../data/BannerData'
+import { bannerData } from '../../data/Home/BannerData'
 import Button from './Button'
 import '../styles/Home/Category.css'
 
@@ -11,7 +11,7 @@ const Category = () => {
           <div className='bannerSmall' style={{ backgroundImage : `url(${banner.image})`}} key={index} >
             <h3>{banner.heading}</h3>
             <p>{banner.para}</p>
-            <Button title={banner.name} />
+            <Button path={banner.path} title={banner.name} />
           </div>
         )
       })}

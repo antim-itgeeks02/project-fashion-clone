@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/Collections/Collection/ShopBuyBrand.css'
 import {ShopByBrandData} from '../../data/Collection/ShopByBrandData'
+import {Link} from 'react-router-dom'
 
 
 const ShopByBrand = () => {
@@ -12,9 +13,9 @@ const ShopByBrand = () => {
             {ShopByBrandData.map((watch,index) => {
                 return(
                     <div className='singleWatch' key={index}>
-                        <img src= {watch.image}/>
-                        <h3>{watch.Brand}</h3>
-                        <p>{watch.item}</p>
+                        <Link to={watch.path} className='allAnchorsBlack'><img src= {watch.image} className='singleWatchimg'/></Link>
+                        <Link to={watch.path} className='allAnchorsBlack'><h3 className='allWatchesH3'>{watch.Brand}</h3></Link>
+                        <Link to={watch.path} className='allAnchorsBlack'><p>{watch.item}</p></Link>
                     </div>
                 )
             })}

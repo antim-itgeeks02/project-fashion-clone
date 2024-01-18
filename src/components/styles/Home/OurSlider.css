@@ -1,0 +1,44 @@
+.ourSlider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.singleProduct {
+    text-align: center;
+}
+
+.singleProductImage {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+.singleProduct p {
+    font-size: 15px;
+    padding: 3px 0;
+}
+
+.slick-prev {
+
+}
+
+.slick-next {
+
+}
+
+.slick-slider.slick-initialized {
+    width: 100vw;
+}
+
+.slick-arrow.slick-prev {
+    background: black;
+    left: 3% !important;
+    z-index: 1;
+}
+
+.slick-arrow.slick-next {
+    background: black;
+    right: 3% !important;
+    z-index: 1;
+}

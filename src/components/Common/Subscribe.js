@@ -3,6 +3,7 @@ import '../styles/Common/Subscribe.css'
 import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
+import { Link } from 'react-router-dom'
 
 const Subscribe = () => {
     return (
@@ -14,9 +15,9 @@ const Subscribe = () => {
             <div className='rightDiv'>
                 <input placeholder='Enter Your Email Address' type='search' />
                 <div className='iconsSub'>
-                    <FaFacebookF className='icon' />
-                    <FaXTwitter className='icon' />
-                    <FaInstagram className='icon' />
+                    <Link to='https://www.facebook.com/ugmedia' target='_blank'><FaFacebookF className='icon' /></Link>
+                    <Link to='https://twitter.com/undergrndmedia' target='_blank'><FaXTwitter className='icon' /></Link>
+                    <Link to='https://www.instagram.com/undergroundmedia/' target='_blank'><FaInstagram className='icon' /></Link>
                 </div>
 
             </div>

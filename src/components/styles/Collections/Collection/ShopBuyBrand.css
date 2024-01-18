@@ -9,6 +9,10 @@
     font-size: 15px;
     color: #2b2b2b;
 }
+.allWatchesH3{
+    font-size: 15px;
+    color: #2b2b2b;
+}
 .shopByBrandHeading{
     font-size: 20px;
     color: #2b2b2b;
@@ -28,6 +32,6 @@
     justify-content: center;
     width: 20%
 }
-.singleWatch img{
+.singleWatchimg{
     width: 100%
 }
