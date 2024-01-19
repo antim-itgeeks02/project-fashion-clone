@@ -4,9 +4,9 @@ import BrandsLogo from '../Home/BrandsLogo';
 import BuyNowPayLater from '../Home/BuyNowPayLater';
 import Category from '../Home/Category';
 import Features from '../Home/Features';
-import Highlights from '../Home/Highlights';
 import ProductSlider from '../Home/ProductSlider';
 import ReviewSection from '../Home/ReviewSection';
+import TwoTypes from '../Home/TwoTypes';
 
 const Home = () => {
     return (
@@ -17,7 +17,7 @@ const Home = () => {
             <ProductSlider />
             <BrandsLogo />
             <BuyNowPayLater />
-            <Highlights />
+            <TwoTypes/>
             <ReviewSection />
         </>
     )

@@ -1,10 +1,17 @@
 export const productSliderData = [
-    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/omega-seamaster-300.png?v=1447726343&width=1200', name: 'Big Pilots', brand: 'IWC',price : '$13,900' },
-    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/iwc-big-pilots.png?v=1447726446&width=1200', name: 'Big Pilots', brand: 'IWC',price : '$13,900' },
-    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/tag-heuer-carrera.png?v=1447726695&width=1200', name: 'Big Pilots', brand: 'IWC',price : '$13,900' },
-    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/Breitling-cosmonaute.png?v=1447725296&width=1200', name: 'Big Pilots', brand: 'IWC',price : '$13,900' },
-    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/Brietling-navitimer.png?v=1447725131&width=1200', name: 'Big Pilots', brand: 'IWC',price : '$13,900' },
-    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/Breitling-navitime-world.png?v=1447725229&width=1200', name: 'Big Pilots', brand: 'IWC',price : '$13,900' },
-    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/audemars-piguet-royal-oak-offshore_91696ddf-b488-4583-b212-409b24aa872a.png?v=1447724788&width=1200', name: 'Big Pilots', brand: 'IWC',price : '$13,900' },
-    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/audemars-piguet-royal-oak-offshore_91696ddf-b488-4583-b212-409b24aa872a.png?v=1447724788&width=1200', name: 'Big Pilots', brand: 'IWC',price : '$13,900' }
+    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/tag-heuer-carrera.png?v=1447726695&width=1200', name: 'Carrera', brand: 'Tag Heuer', price: '$ 9,600.00',path:'/collections/tag-heuer/products/carrera' },
+    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/omega-seamaster-300.png?v=1447726343&width=1200', name: 'Seamaster', brand: 'Omega', price: '$ 7,020.00', path: '/collections/omega/products/seamaster' },
+    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/audemars-piguet-royal-oak-offshore-3.png?v=1447724959&width=1200', name: 'Royal Oak Offshore', brand: 'Audemars Piguet', price: '$ 38,000.00',path:'/collections/audemars-piguet/products/royal-oak-offshore' },
+    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/Breitling-cosmonaute.png?v=1447725296&width=1200', name: 'Big Pilots', brand: 'IWC', price: '$13,900' },
+    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/iwc-big-pilots.png?v=1447726446&width=1200', name: 'Big Pilots', brand: 'IWC', price: '$13,900',path:'/collections/iwc/products/big-pilots-1' },
+    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/Breitling-navitime-world.png?v=1447725229&width=1200', name: 'Big Pilots', brand: 'IWC', price: '$13,900' },
+    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/audemars-piguet-royal-oak-offshore_91696ddf-b488-4583-b212-409b24aa872a.png?v=1447724788&width=1200', name: 'Big Pilots', brand: 'IWC', price: '$13,900' },
+    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/audemars-piguet-royal-oak-offshore_91696ddf-b488-4583-b212-409b24aa872a.png?v=1447724788&width=1200', name: 'Big Pilots', brand: 'IWC', price: '$13,900' },
+    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/hublot-big-bang.png?v=1447732596&width=1200', name: 'Big Bang', brand: 'Hublot', price: '$ 17,936.00' },
+    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/audemars-piguet-royal-oak-offshore-2.png?v=1447724844&width=1200', name: 'Royal Oak Offshore', brand: 'Audemars Piguet', price: '$ 37,100.00',path:'/collections/audemars-piguet/products/royal-oak-offshore-2' },
+    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/omega-seamaster-300-co-axial.png?v=1447726245&width=1200', name: 'Seamaster 300 Co-Axial', brand: 'Omega', price: '$ 8,860.00', path: '/collections/omega/products/seamaster-300-co-axial-1' },
+    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/tag-heuer-monaco-black.png?v=1447726815&width=1200', name: 'Monaco', brand: 'Tag Heuer', price: '$ 6,800.00',path:'/collections/tag-heuer/products/monaco-1' },
+    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/hublot-big-bang-2.png?v=1447725523&width=1200', name: 'Big Bang', brand: 'Hublot', price: '$ 11,856.00',path:'/collections/hublot/products/big-bang-1' },
+    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/hublot-big-bang.png?v=1447732596&width=1200', name: 'Big Bang', brand: 'Hublot', price: '$ 17,936.00',path:'/collections/hublot/products/big-bang' },
+    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/hublot-Big-bang-unico.png?v=1447725616&width=1200', name: 'Big Bang Unico', brand: 'Hublot', price: '$ 22,800.00',path:'/collections/hublot/products/big-bang-unico' }
 ]

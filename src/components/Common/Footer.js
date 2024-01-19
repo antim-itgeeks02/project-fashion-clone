@@ -34,7 +34,7 @@ const Footer = () => {
 
                                             obj.list.map((item, index) => {
                                                 return (
-                                                    <Link to={item.path} className='allAnchorsBlack'><p key={index}> {item.name}</p></Link>
+                                                    <Link to={item.path}  key={index} className='allAnchorsBlack'><p> {item.name}</p></Link>
                                                 )
                                             })
 

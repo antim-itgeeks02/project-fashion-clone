@@ -1,0 +1,44 @@
+.allProductsThreeInLineMain{
+    font-size: 15px;
+    color: #2b2b2b;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 6% 0;
+}
+.allProductsThreeInLineSibleDiv{
+    height: 600px;
+    width: 400px;    
+    margin-top: 20px;
+    position: relative;
+}
+.allProductsThreeInLineSibleImage{
+    height: 520px;
+    width: 395px;
+}
+.infoDiv{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.firstSpan{
+    position: absolute;
+    top: 43%;
+    right: 35%;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    width: auto;
+    padding: 15px 20px;
+    letter-spacing: 1px;
+    background-color: #2b2b2b;
+    opacity: 0;
+}
+.firstSpan:hover{
+    background-color: black;
+    transition: all 800ms ease;
+}
+.allProductsThreeInLineSibleDiv:hover .firstSpan{
+    opacity: 1;
+}

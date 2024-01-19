@@ -1,0 +1,17 @@
+.singleWatch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    font-size: 15px;
+    color: #2b2b2b;
+    gap: 5px;
+}
+.allWatchesH3{
+    font-size: 15px;
+    color: #2b2b2b;
+}
+.singleWatchimg{
+    width: 100%;
+}
