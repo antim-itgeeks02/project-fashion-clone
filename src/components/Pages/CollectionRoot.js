@@ -3,12 +3,14 @@ import CollectionBanner from '../Collection/CollectionBanner'
 import ShopBuyBrand from '../Collection/ShopByBrand'
 import { Outlet } from 'react-router-dom'
 
-const Collection = () => {
-  return (
-    <>
-      <Outlet/>
-    </>
-  )
+const CollectionRoot = () => {
+    return (
+
+        <>
+            <CollectionBanner />
+            <ShopBuyBrand />
+        </>
+    )
 }
 
-export default Collection
+export default CollectionRoot

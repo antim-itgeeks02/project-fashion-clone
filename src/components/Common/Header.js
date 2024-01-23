@@ -26,8 +26,6 @@ const Header = () => {
                 <Link to='https://www.facebook.com/ugmedia' target='_blank' className='icon' ><FaFacebookF  /></Link>
                 <Link to='https://twitter.com/undergrndmedia' target='_blank' className='icon' ><FaXTwitter /></Link>
                 <Link to='https://www.instagram.com/undergroundmedia/' target='_blank' className='icon' ><FaInstagram  /></Link>
-                
-                
             </div>
             <div className='advertisment'>
                 <MdKeyboardArrowLeft onClick={prevButton} className='arrowButtons' />

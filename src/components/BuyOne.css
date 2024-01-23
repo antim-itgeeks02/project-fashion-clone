@@ -1,0 +1,41 @@
+.buyOneMain{
+    display: flex;
+    margin: 40px;
+    color: #2b2b2b;
+    letter-spacing: 0.5px;
+}
+.buyOneImageDiv{
+    width: 50%;
+    padding: 20px;
+}
+.buyOneImage{
+    width: 100%;
+    height: auto;
+}
+.buyOneContentDiv{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 20px;
+}
+.buyOneHeadingButton{
+    display: flex;
+    justify-content: space-between;
+}
+.buyOneHeadingDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.buyOneHeading{
+    font-size: 23px;
+}
+.buyOnePrice{
+    font-size: 17px;
+}
+.buyOneLeftRightButton{
+    border: none;
+    background-color: white;
+    padding: 8px;
+}
