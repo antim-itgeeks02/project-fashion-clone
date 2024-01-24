@@ -1,0 +1,17 @@
+.midAdBuyOneMain{
+    margin: 3% 4%;
+}
+.midAdBuyOneUpper{
+    display: flex;
+    align-items: center;
+}
+.midAdBuyOneImage{
+    width: 50%;
+}
+.midAdBuyOneDiv{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 10px;
+    padding: 25px;
+}

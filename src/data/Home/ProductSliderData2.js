@@ -1,10 +1,10 @@
 export const productSliderData2 = [
-    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/audemars-piguet-royal-oak-offshore_91696ddf-b488-4583-b212-409b24aa872a.png?v=1447724788&width=1200', name: 'Big Pilots', brand: 'IWC',price : '$13,900' },
-    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/Breitling-navitime-world.png?v=1447725229&width=1200', name: 'Big Pilots', brand: 'IWC',price : '$13,900' },
-    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/Brietling-navitimer.png?v=1447725131&width=1200', name: 'Big Pilots', brand: 'IWC',price : '$13,900' },
-    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/audemars-piguet-royal-oak-offshore_91696ddf-b488-4583-b212-409b24aa872a.png?v=1447724788&width=1200', name: 'Big Pilots', brand: 'IWC',price : '$13,900' },
-    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/Breitling-cosmonaute.png?v=1447725296&width=1200', name: 'Big Pilots', brand: 'IWC',price : '$13,900' },
-    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/tag-heuer-carrera.png?v=1447726695&width=1200', name: 'Big Pilots', brand: 'IWC',price : '$13,900' },
-    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/iwc-big-pilots.png?v=1447726446&width=1200', name: 'Big Pilots', brand: 'IWC',price : '$13,900' },
-    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/omega-seamaster-300.png?v=1447726343&width=1200', name: 'Big Pilots', brand: 'IWC',price : '$13,900' }
+    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/Breitling-cosmonaute.png?v=1447725296&width=1200', name: 'Cosmonaute', brand: 'Breitling', price: '$ 10,214.00',path:'/collections/breitling/products/cosmonaute' },
+    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/Brietling-navitimer.png?v=1447725131&width=1200', name: 'Navitimer ', brand: 'Breitling', price: '$ 10,290.00',path:'/collections/breitling/products/navitimer' },
+    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/audemars-piguet-royal-oak-offshore-3.png?v=1447724959&width=1200', name: 'Royal Oak Offshore', brand: 'Audemars Piguet', price: '$ 38,000.00',path:'/collections/audemars-piguet/products/royal-oak-offshore' },
+    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/audemars-piguet-royal-oak-offshore_91696ddf-b488-4583-b212-409b24aa872a.png?v=1447724788&width=1200', name: 'Royal Oak Offshore', brand: 'Audemars Piguet', price: '$ 49,999.00',path:'/collections/audemars-piguet/products/royal-oak-offshore-1' },
+    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/audemars-piguet-royal-oak-offshore-2.png?v=1447724844&width=1200', name: 'Royal Oak Offshore', brand: 'Audemars Piguet', price: '$ 37,100.00',path:'/collections/audemars-piguet/products/royal-oak-offshore-2' },
+    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/tag-heuer-carrera.png?v=1447726695&width=1200', name: 'Carrera', brand: 'Tag Heuer', price: '$ 9,600.00',path:'carrera' },
+    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/Monaco.png?v=1447726546&width=1200', name: 'Monaco', brand: 'Tag Heuer', price: '$ 7,700.00',path:'monaco' },
+    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/tag-heuer-monaco-black.png?v=1447726815&width=1200', name: 'Monaco-1', brand: 'Tag Heuer', price: '$ 6,800.00',path:'monaco-1' }
 ]

@@ -1,41 +1,178 @@
-.buyOneMain{
+.buyOneMain {
     display: flex;
     margin: 40px;
     color: #2b2b2b;
     letter-spacing: 0.5px;
 }
-.buyOneImageDiv{
+
+.buyOneImageDiv {
     width: 50%;
     padding: 20px;
 }
-.buyOneImage{
+
+.buyOneImage {
     width: 100%;
     height: auto;
 }
-.buyOneContentDiv{
+
+.buyOneContentDiv {
     width: 50%;
     display: flex;
     flex-direction: column;
     gap: 15px;
     padding: 0 20px;
 }
-.buyOneHeadingButton{
+
+.buyOneHeadingButton {
     display: flex;
     justify-content: space-between;
 }
-.buyOneHeadingDiv{
+
+.buyOneHeadingDiv {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.buyOneHeading{
+
+.buyOneHeading {
     font-size: 23px;
 }
-.buyOnePrice{
+
+.buyOnePrice {
     font-size: 17px;
 }
-.buyOneLeftRightButton{
+
+.buyOneLeftRightButton {
     border: none;
     background-color: white;
     padding: 8px;
+}
+
+.buyOneFeaturesMain {
+    margin-top: 5px;
+}
+
+.buyOneFeatures {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.buyOneFeaturesIcons {
+    font-size: 17px;
+    height: 21px;
+    width: 20px;
+    color: black;
+}
+
+.buyOneFeaturesText {
+    font-size: 15px;
+}
+
+.buyOneInputMainDiv {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.buyOneInputButton {
+    border: none;
+    background-color: white;
+    /* padding: 10px;
+    margin: 10px; */
+    font-size: 15px;
+    width: 50px;
+    height: 48px;
+}
+
+.buyOneInputMain {
+    border: none;
+    width: 50px;
+    height: 48px;
+    outline: none;
+    text-align: center;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.buyOneInputMainDivBorder {
+    border: 1px solid #d5d5d5;
+    width: fit-content;
+}
+
+.buyOnePersonalizeDiv {
+
+}
+
+.buyOnePersonalizeInput {
+    height: 50px;
+    width: 100%;
+    border: 1px solid #d5d5d5;
+    outline: none;
+    padding-left: 3%;
+    position: relative;
+}
+.buyOnePersonalizePara {
+    position: absolute;
+    top: -20%;
+    left: 1%;
+}
+.buyOnePersonalizeInput :focus .buyOnePersonalizePara{
+    top: 5%;
+}
+.buyOneCartButtonsDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+.buyOneCartButtons{
+    line-height: 45px;
+    border: none;
+    font-size: 15px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+.buyOneCartButtons2{
+    line-height: 45px;
+    border: none;
+    background-color: #2b2b2b;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+}
+.buyOneCartButtons2:hover{
+    background-color: black;
+}
+.buyOneSvgMain{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-top: 15px;
+}
+.buyOneSvg{
+    display: flex;
+    gap: 5px;
+}
+.buyOneSingleSvg{
+    width: 45px;
+    height: 27.5px;
+}
+.buyOneSingleIcon{
+    width: 23px;
+    height: 20px;
+}
+.buyOneAlsoLikeMain{
+    padding: 0 20%;
+}
+.buyOneAlsoLikeHeading{
+    font-size: 18px;
+    color: #2b2b2b;
+    text-align: center;
 }

@@ -1,0 +1,4 @@
+export const infoData =[
+    {strong:'More than just a store...',p1:"Galleria is a haven for those who recognize that a watch is more than a mere accessory – it's an extension of one's character and a symbol of personal achievement.",p2:'Our team of watch enthusiasts and experts share your enthusiasm, guiding you through our collection with a wealth of knowledge and a commitment to personalized service.'},
+    {strong:'Trust our expertise',p1:'Whether you seek the precision of automatic movements, the elegance of intricate complications, or the understated luxury of classic designs, Galleria offers a distinguished selection that captures the essence of haute horlogerie.',p2:'Welcome to a realm where time is not merely measured, but celebrated in its most exquisite form.'},
+]

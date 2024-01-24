@@ -25,6 +25,7 @@ import AudemarsPiguet from './components/Collection/Shop by Brand/AudemarsPiguet
 import CollectionRoot from './components/Pages/CollectionRoot';
 import Products from './components/Products';
 import BuyOne from './components/BuyOne';
+import AllInformation from './components/Pages/AllInformation';
 function App() {
   const [show, setShow] = useState(false);
   const [productPath, setPath] = useState("");
@@ -60,8 +61,8 @@ function App() {
         <Route path='/collections' element={<Collection />}>
           <Route path='' element={<CollectionRoot />} />
           <Route path='tag-heuer' element={<Collection />} >
-            <Route path='' element={<TagHeuer  />} />
-           
+            <Route path='' element={<TagHeuer />} />
+
           </Route>
           <Route path='omega' element={<Collection />} >
             <Route path='' element={<Omega />} />
@@ -70,13 +71,18 @@ function App() {
             {/* <Route path={`products/${productPath}`} element={<BuyOne />}></Route> */}
           </Route>
         </Route>
-
-
         {/* <Route path='/collections/' element={</>} /> */}
         <Route path='/collections/iwc' element={<IWC />} />
         <Route path='/collections/hublot' element={<Hublot />} />
         <Route path='/collections/breitling' element={<Breitling />} />
         <Route path='/collections/audemars-piguet' element={<AudemarsPiguet />} />
+        {/* Information */}
+        {/* <Route path='pages' /> */}
+        {/* <Route exact path="/" component={<ShopHover/>} />
+        <Route path="/pages/:id">
+          <AllInformation />
+        </Route> */}
+        <Route path='/pages/:id' element={<AllInformation/>}/>
       </Routes>
       <Subscribe />
       <Footer />

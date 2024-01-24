@@ -25,6 +25,7 @@ import { FaChevronLeft } from "react-icons/fa";
 import './BuyOne.css'
 
 const BuyOne = () => {
+  const src = "https://cdn.shopify.com/videos/c/vp/709152aa79f54ebb916a8300cbf46847/709152aa79f54ebb916a8300cbf46847.HD-1080p-7.2Mbps-17926183.mp4";
   const getPath = useLocation();
   const navigate = useNavigate();
   const [pathNameUrl, setpathNameUrl] = useState(getPath.pathname.slice(32, getPath.pathname.length));
@@ -63,49 +64,57 @@ const BuyOne = () => {
               <button className='buyOneLeftRightButton'><FaChevronRight /></button>
             </div>
           </div>
-          <div>
-            <div>
-              <MdOutlineVerified />
-              <p>5 Year International Warranty</p>
+          <div className='buyOneFeaturesMain'>
+            <div className='buyOneFeatures'>
+              <MdOutlineVerified className='buyOneFeaturesIcons' />
+              <p className='buyOneFeaturesText'>5 Year International Warranty</p>
             </div>
-            <div>
-              <MdOutlineSecurity />
-              <p>Secure online shopping</p>
+            <div className='buyOneFeatures'>
+              <MdOutlineSecurity className='buyOneFeaturesIcons' />
+              <p className='buyOneFeaturesText'>Secure online shopping</p>
             </div>
           </div>
-          <div>
+          <div className='buyOneInputMainDiv'>
             <label htmlFor="quantity" >Quantity</label>
-            <button>-</button>
-            <input type='number' id='quantity' defaultValue={1} />
-            <button>+</button>
-          </div>
-          <div>
-            <input type='text' />
-            <p>Personalize with engraving:</p>
-          </div>
-          <button>Add to cart</button>
-          <button>But it now</button>
-          <div className='svgDiv'>
-            Secure online shopping
-            <VISA />
-            <MASTER />
-            <AMERICAN />
-            <PAYPAL />
-            <UNK />
-            <DISCOVER />
-            <div></div>
-            <div className='icons'>
-              Share:
-              <Link to='https://www.facebook.com/ugmedia' target='_blank' className='icon ' ><FaFacebookF className='allAnchorsBlack' /></Link>
-              <Link to='https://twitter.com/undergrndmedia' target='_blank' className='icon' ><FaXTwitter className='allAnchorsBlack' /></Link>
-              <Link to='https://www.instagram.com/undergroundmedia/' target='_blank' className='icon' ><FaInstagram className='allAnchorsBlack' /></Link>
+            <div className='buyOneInputMainDivBorder'>
+              <button className='buyOneInputButton'>-</button>
+              <input className='buyOneInputMain' type='number' id='quantity' defaultValue={1} />
+              <button className='buyOneInputButton'>+</button>
             </div>
           </div>
+          <div className='buyOnePersonalizeDiv'>
+            <input className='buyOnePersonalizeInput' placeholder='Personalize with engraving:' type='text' />
+            <p className='buyOnePersonalizePara'>Personalize with engraving:</p>
+          </div>
+          <div className='buyOneCartButtonsDiv'>
+            <button className='buyOneCartButtons' >Add to cart</button>
+            <button className='buyOneCartButtons2'>But it now</button>
+          </div>
+          <div className='buyOneSvgMain'>
+            <div>Secure online shopping</div>
+            <div className='buyOneSvg'>
+              <VISA className='buyOneSingleSvg' />
+              <MASTER className='buyOneSingleSvg' />
+              <AMERICAN className='buyOneSingleSvg' />
+              <PAYPAL className='buyOneSingleSvg' />
+              <UNK className='buyOneSingleSvg' />
+              <DISCOVER className='buyOneSingleSvg' />
+            </div>
+          </div>
+          <div className='icons'>
+            <div>Share:</div>
+            <Link to='https://www.facebook.com/ugmedia' target='_blank' className='icon' ><FaFacebookF className='allAnchorsBlack buyOneSingleIcon' /></Link>
+            <Link to='https://twitter.com/undergrndmedia' target='_blank' className='icon' ><FaXTwitter className='allAnchorsBlack buyOneSingleIcon' /></Link>
+            <Link to='https://www.instagram.com/undergroundmedia/' target='_blank' className='icon' ><FaInstagram className='allAnchorsBlack buyOneSingleIcon' /></Link>
+          </div>
+
         </div>
       </div>
-      <BuyOneVideo />
-      <h3>You may also like</h3>
-      <AllProductsThreeInLine data={alsoLike} />
+      <BuyOneVideo src={src}/>
+      <div className='buyOneAlsoLikeMain'>
+        <h3 className='buyOneAlsoLikeHeading'>You may also like</h3>
+        <div><AllProductsThreeInLine data={alsoLike} /></div>
+      </div>
       <MidAdBuyOne />
     </>
   )

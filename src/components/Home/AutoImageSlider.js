@@ -24,7 +24,7 @@ const AutoImageSlider = () => {
         <div style={{ backgroundImage: `url(${background})` }} className='autoImageSliderContainer'>
             <h2>{imageData[currentIndex].heading}</h2>
             <p>{imageData[currentIndex].para}</p>
-            <button className='autoImageSliderButtons'><Link to={imageData[currentIndex].list[1]} className='allAnchorsWhite'>{imageData[currentIndex].list[0]}</Link></button>
+            <Link to={imageData[currentIndex].list[1]} className='allAnchorsWhite'><button className='autoImageSliderButtons'>{imageData[currentIndex].list[0]}</button></Link>
         </div>
     )
 }

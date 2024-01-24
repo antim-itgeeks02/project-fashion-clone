@@ -4,6 +4,7 @@ import '../styles/Home/OurSlider.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from 'react-router-dom';
 
 const OurSlider = ({ products }) => {
     const config = {
@@ -18,9 +19,10 @@ const OurSlider = ({ products }) => {
             {products.map((product, index) => {
                 return (
                     <div className='singleProduct' key={index}>
-                        <img className='singleProductImage' src={product.image} />
-                        <p>{product.name}</p>
-                        <p>{product.brand}</p>
+                        <Link to={product.path}><img className='singleProductImage' src={product.image} /></Link>
+                        <div className='singleProductFirstSpan'>QUICK<br/> SHOP</div>
+                        <Link to={product.path} className='allAnchorsBlack'><p>{product.brand}</p>
+                        <p>{product.name}</p></Link>
                         <p>{product.price}</p>
                     </div>
                 )
