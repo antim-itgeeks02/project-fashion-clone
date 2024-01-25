@@ -41,3 +41,16 @@
     margin-left: 3%;
     font-weight: 300;
 }
+
+@media screen and (max-width: 500px) {
+    .icons{
+        display: none;
+    }
+    .advertisment{
+        width: 100%;
+    }
+    .usd{
+        display: none;
+    }
+    
+}

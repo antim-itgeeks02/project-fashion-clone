@@ -1,0 +1,19 @@
+.cartPageMain{
+    margin: 3%;
+    color: #2b2b2b;
+}
+.cartPageHeadingDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cartPageCartItems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+.cartPageHeading{
+    font-size: 23px;
+    color: #2b2b2b;
+}

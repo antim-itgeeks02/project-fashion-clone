@@ -35,6 +35,13 @@ const BuyOne = () => {
   // console.log(pathNameUrl)
   const [toShow, setToShow] = useState(0);
   const [otherIndex, setOtherIndex] = useState(0);
+  const [inputValue,setInputValue] = useState(1);
+  const handleLess =() =>{
+    inputValue > 1 && setInputValue(inputValue-1);
+  }
+  const handleMore =() =>{
+    setInputValue(inputValue+1);
+  }
 
   useEffect(() => {
     const allBrandData = mainData.findIndex(element => element.id.toLowerCase() === getThePath[2].toLowerCase())
@@ -77,9 +84,9 @@ const BuyOne = () => {
           <div className='buyOneInputMainDiv'>
             <label htmlFor="quantity" >Quantity</label>
             <div className='buyOneInputMainDivBorder'>
-              <button className='buyOneInputButton'>-</button>
-              <input className='buyOneInputMain' type='number' id='quantity' defaultValue={1} />
-              <button className='buyOneInputButton'>+</button>
+              <button className='buyOneInputButton' onClick={handleLess}>-</button>
+              <input className='buyOneInputMain' type='number' id='quantity' defaultValue={inputValue} />
+              <button className='buyOneInputButton' onClick={handleMore} >+</button>
             </div>
           </div>
           <div className='buyOnePersonalizeDiv'>

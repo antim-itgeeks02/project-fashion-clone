@@ -14,7 +14,7 @@ const NavBar = (props) => {
             (
               <Link to={nav.path} key={index} className='navItem'><p onMouseEnter={props.handleHover} >{nav.item}<MdKeyboardArrowDown className='navItemArrow' /></p></Link>
             ) :
-            (<Link to={nav.path} key={index} className='navItem'><p onMouseLeave={props.handleHoverRemover}>{nav.item}</p></Link>)
+            (<Link to={nav.path} key={index} className='navItem'><p onMouseEnter={props.handleHoverRemover}>{nav.item}</p></Link>)
             
         )
       })}

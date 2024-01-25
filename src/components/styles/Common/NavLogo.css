@@ -1,23 +1,26 @@
-.navLogo{
+.navLogo {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 15px 40px;
 }
-.search{
+
+.search {
     width: 40%;
     display: flex;
     align-items: center;
 }
-.inputField{
+
+.inputField {
     border: 1px solid rgb(192, 187, 187);
     outline: none;
     border-right: none;
     padding: 15px;
-    padding-right:18%;
+    padding-right: 18%;
     font-size: 15px;
 }
-.searchButton{
+
+.searchButton {
     background-color: white;
     border: 1px solid rgb(192, 187, 187);
     outline: none;
@@ -25,20 +28,86 @@
     border-left: none;
     font-size: 15px;
 }
-.imageDiv{
+
+.imageDiv {
     width: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.logo{
+
+.logo {
     height: auto;
     max-width: 165px;
 }
-.cartDiv{
+
+.cartDivButton {
     width: 40%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 6px;
+}
+.secondDivForA{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+.newDiv{
+    opacity: 0.8;
+    background-color: #1e1e1e;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100
+}
+.sideCartMain {
+    height: 100%;
+    position: fixed;
+    z-index: 100001;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sideCartDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.sideCartDivCross{
+    width: 20px;
+    height: 20px;
+    border-color: #2b2b2b;
+}
+.sideCartDivHeading{
+    font-size: 20px;
+    color: #2b2b2b;;
+}
+.sideCartDiv2{
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .navLogo{
+        width: 100%;
+    }
+    .search {
+        display: none;
+    }
+    .logo{
+        width: 110px;
+        height: 20px;
+    }
+    .mediaNot{
+        display: none;
+    }
+    
 }

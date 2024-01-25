@@ -31,3 +31,7 @@
     padding: 15px 20px;
     letter-spacing: 1px;
 }
+.processBar{
+    display: flex;
+    gap: 5px;
+}

@@ -1,4 +1,4 @@
-export const shopData = [
+export const  shopData = [
     {
         heading: 'Shop by style', link: '/#', list: [{ name: 'Chronographs', path: '/collections/chronographs' },
         { name: 'Dress Watches', path: '/collections/dress-watches' }, { name: 'Premier Watches', path: '/collections/premier-watches' },

@@ -10,6 +10,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import { LiaFlagUsaSolid } from "react-icons/lia";
 import { FaDollarSign } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+
 const Header = () => {
     const [current, setCurrent] = useState(0);
     const length = headerData.length - 1;

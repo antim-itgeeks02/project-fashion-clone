@@ -26,6 +26,7 @@ import CollectionRoot from './components/Pages/CollectionRoot';
 import Products from './components/Products';
 import BuyOne from './components/BuyOne';
 import AllInformation from './components/Pages/AllInformation';
+import CartPage from './components/Pages/CartPage';
 function App() {
   const [show, setShow] = useState(false);
   const [productPath, setPath] = useState("");
@@ -82,7 +83,8 @@ function App() {
         <Route path="/pages/:id">
           <AllInformation />
         </Route> */}
-        <Route path='/pages/:id' element={<AllInformation/>}/>
+        <Route path='/pages/:id' element={<AllInformation />} />
+        <Route path='/cart' element={<CartPage />} />
       </Routes>
       <Subscribe />
       <Footer />
