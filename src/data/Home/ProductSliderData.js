@@ -1,6 +1,6 @@
 export const productSliderData = [
-    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/iwc-big-pilots.png?v=1447726446&width=1200', name: 'Big Pilots', brand: 'IWC', price: '$13,900',path:'/collections/iwc/products/big-pilots-1' },
-    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/tag-heuer-carrera.png?v=1447726695&width=1200', name: 'Carrera', brand: 'Tag Heuer', price: '$ 9,600.00',path:'carrera' },
+    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/iwc-big-pilots.png?v=1447726446&width=1200', name: 'big-pilots', brand: 'IWC', price: '$13,900', path: '/collections/iwc/products/big-pilots-1' },
+    { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/tag-heuer-carrera.png?v=1447726695&width=1200', name: ' carrera ', brand: 'Tag Heuer', price: '$ 9,600.00', path: '/collections/tag-heuer/products/carrera' },
     { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/Breitling-cosmonaute.png?v=1447725296&width=1200', name: 'Cosmonaute', brand: 'Breitling', price: '$ 10,214.00',path:'/collections/breitling/products/cosmonaute' },
     { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/Brietling-navitimer.png?v=1447725131&width=1200', name: 'Navitimer ', brand: 'Breitling', price: '$ 10,290.00',path:'/collections/breitling/products/navitimer' },
     { image: 'https://fashionopolism-galleria.myshopify.com/cdn/shop/products/Breitling-navitime-world.png?v=1447725229&width=1200', name: 'Navitimer World', brand: 'Breitling', price: '$ 8,694.00',path:'/collections/breitling/products/navitimer-world' },

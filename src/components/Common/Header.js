@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import '../styles/Common/Header.css'
-// import ReactCountryFlagsCurrencySelect from "react-country-flag-currency-picker"
 import { headerData } from '../../data//Common/HeaderData';
 import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -14,7 +13,6 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     const [current, setCurrent] = useState(0);
     const length = headerData.length - 1;
-    // console.log(length);
     const prevButton = () => {
         current === 0 ? setCurrent(length) : setCurrent(current - 1);
     }
