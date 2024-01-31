@@ -18,7 +18,10 @@ import AllInformation from './components/Pages/AllInformation';
 import CartPage from './components/Pages/CartPage';
 import AllBrands from './components/AllBrands';
 import AllInformationEmpty from './components/Pages/AllInformationEmpty';
-import SingleOneDemo from './components/SingleOneDemo';
+import SingleBrand from './components/SingleBrand';
+import APracticleGuide from './components/Blog/APracticleGuide';
+import MillionairesBlog from './components/Blog/MillionairesBlog';
+import LastBlog from './components/Blog/LastBlog';
 function App() {
   const [show, setShow] = useState(false);
   const handleHover = () => {
@@ -38,14 +41,14 @@ function App() {
       <Advertisment />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/blogs/news' element={<Blog />} />
+        <Route path='/blogs/news' element={<Blog />}/>
         <Route path='/pages/theme-features' element={<ThemeFeature />} />
         {/* collections starts */}
         <Route path='/collections' element={<Collection />}>
           <Route path='' element={<CollectionRoot />} />
           <Route path=':name' element={<AllBrands />} >
             <Route path='products' >
-              <Route path=':id' element={<SingleOneDemo />} />
+              <Route path=':id' element={<SingleBrand />} />
             </Route>
           </Route>
         </Route>
@@ -53,7 +56,11 @@ function App() {
         <Route path='/pages' element={<AllInformationEmpty />} >
           <Route path=':id' element={<AllInformation />} />
         </Route>
+        <Route path='/blogs/news/a-practical-guide-to-watches' element={<APracticleGuide />} />
+        <Route path='/blogs/news/78257667-watches-of-monaco' element={<MillionairesBlog/>} />
+        <Route path='/blogs/news/78257155-watches-of-wall-street' element={<LastBlog/>} />
         <Route path='/cart' element={<CartPage />} />
+        
       </Routes>
       <Subscribe />
       <Footer />

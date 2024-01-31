@@ -105,7 +105,7 @@ input::-webkit-inner-spin-button {
 }
 
 .buyOnePersonalizeDiv {
-
+    position: relative;
 }
 
 .buyOnePersonalizeInput {
@@ -118,8 +118,8 @@ input::-webkit-inner-spin-button {
 }
 .buyOnePersonalizePara {
     position: absolute;
-    top: -20%;
-    left: 1%;
+    top: 24%;
+    left: 3%;
 }
 .buyOnePersonalizeInput :focus .buyOnePersonalizePara{
     top: 5%;
@@ -169,10 +169,21 @@ input::-webkit-inner-spin-button {
     height: 20px;
 }
 .buyOneAlsoLikeMain{
-    padding: 0 20%;
+    /* padding: 0 20%; */
 }
 .buyOneAlsoLikeHeading{
     font-size: 18px;
     color: #2b2b2b;
     text-align: center;
 }
+/* HTML: <div class="loader"></div> */
+.loader {
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 30px;
+    animation: l1 1s linear infinite alternate;
+  }
+  .loader:before {
+    content:"Loading..."
+  }
+  @keyframes l1 {to{opacity: 0}}

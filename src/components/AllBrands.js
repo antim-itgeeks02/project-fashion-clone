@@ -4,28 +4,30 @@ import BrandsNav from './Collection/Reusable/BrandsNav'
 import AllProductsThreeInLine from './Collection/Reusable/AllProductsThreeInLine'
 import SmallAd from './Collection/Reusable/SmallAd'
 import FeaturedProducts from './Collection/FeaturedProducts'
-import { mainData } from '../data/Collection/MainData'
 import { useParams } from 'react-router-dom'
 import { brandsNavData } from '../data/Collection/BrandsNavData'
-import SingleOneDemo from './SingleOneDemo'
+import SingleBrand from './SingleBrand'
 
 const NewBrands = () => {
     const src = 'https://fashionopolism-galleria.myshopify.com/cdn/shop/files/gallerie-002.jpg?v=1614313030&width=1200'
     const { name } = useParams();
     const { id } = useParams();
+    // console.log(id)
 
     const [dataToShow, setDataToShow] = useState([]);
+
+    async function fetchDataToShow() {
+        const response = await fetch(`https://fashionopolism-galleria.myshopify.com/collections/${name}/products.json`);
+        const mainData = await response.json();
+        // console.log(mainData);
+        setDataToShow(mainData.products);
+    }
     useEffect(() => {
-        for (let i = 0; i < mainData.length; i++) {
-            if (mainData[i].id === name) {
-                setDataToShow(mainData[i].value);
-                // console.log(mainData[i].value);
-            }
-        }
+        fetchDataToShow();
     }, [name])
     return (
         (
-            id ? (<SingleOneDemo allThreeWatches={dataToShow} chanege={name}/>) :
+            id ? (<SingleBrand/>) :
                 (<div>
                     <HeadingBanner src={src} title={name} />
                     <BrandsNav data={brandsNavData} />
@@ -34,6 +36,16 @@ const NewBrands = () => {
                     <FeaturedProducts />
                 </div>)
         )
+        // (
+        //     id ? (<SingleOneDemo allThreeWatches={dataToShow} chanege={name}/>) :
+        //         (<div>
+        //             <HeadingBanner src={src} title={name} />
+        //             <BrandsNav data={brandsNavData} />
+        //             <AllProductsThreeInLine data={dataToShow} />
+        //             <SmallAd />
+        //             <FeaturedProducts />
+        //         </div>)
+        // )
     )
 }
 export default NewBrands

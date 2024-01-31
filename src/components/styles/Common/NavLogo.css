@@ -95,6 +95,15 @@
     text-align: center;
 }
 
+.ourItemCart{
+    width: 333px;
+    height: 117;
+    border: 1px solid #d5d5d5;
+    display: flex;
+    border-left:none ;
+    border-right:none ;
+}
+
 @media screen and (max-width: 500px) {
     .navLogo{
         width: 100%;
