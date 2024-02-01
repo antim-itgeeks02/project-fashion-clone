@@ -24,6 +24,10 @@ import MillionairesBlog from './components/Blog/MillionairesBlog';
 import LastBlog from './components/Blog/LastBlog';
 function App() {
   const [show, setShow] = useState(false);
+  const [sideShow, setsideShow] = useState(false);
+  const settingTrue = () => {
+    setsideShow(!sideShow);
+  }
   const handleHover = () => {
     setShow(true);
   }
@@ -33,15 +37,15 @@ function App() {
   }
 
   return (
-    <BrowserRouter>
+    <BrowserRouter >
       <Header />
-      <NavLogo handleHoverRemover={handleHoverRemover} />
+      <NavLogo handleHoverRemover={handleHoverRemover} settingTrue={settingTrue} sideShow={sideShow} />
       <NavBar handleHover={handleHover} handleHoverRemover={handleHoverRemover} />
       {show && <ShopHover handleHoverRemover={handleHoverRemover} />}
       <Advertisment />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/blogs/news' element={<Blog />}/>
+        <Route path='/blogs/news' element={<Blog />} />
         <Route path='/pages/theme-features' element={<ThemeFeature />} />
         {/* collections starts */}
         <Route path='/collections' element={<Collection />}>
@@ -52,15 +56,15 @@ function App() {
             </Route>
           </Route>
         </Route>
-        
+
         <Route path='/pages' element={<AllInformationEmpty />} >
           <Route path=':id' element={<AllInformation />} />
         </Route>
         <Route path='/blogs/news/a-practical-guide-to-watches' element={<APracticleGuide />} />
-        <Route path='/blogs/news/78257667-watches-of-monaco' element={<MillionairesBlog/>} />
-        <Route path='/blogs/news/78257155-watches-of-wall-street' element={<LastBlog/>} />
+        <Route path='/blogs/news/78257667-watches-of-monaco' element={<MillionairesBlog />} />
+        <Route path='/blogs/news/78257155-watches-of-wall-street' element={<LastBlog />} />
         <Route path='/cart' element={<CartPage />} />
-        
+
       </Routes>
       <Subscribe />
       <Footer />

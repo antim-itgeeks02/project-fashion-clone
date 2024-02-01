@@ -64,12 +64,15 @@ const SingleBrand = () => {
 
   // redux
   const dispatch = useDispatch();
-  const count = useSelector((state) => state.cart)
-  
-  const addItemToCart = ()=>{
-    dispatch(addToCard(dataToShow));
+
+  const datToSend={
+    dataToShow:dataToShow,
+    id:dataToShow.id,
+    quantity:input
   }
-  console.log(count)
+  const addItemToCart = () => {
+    dispatch(addToCard(datToSend));
+  }
 
   return (
     <>
@@ -113,7 +116,7 @@ const SingleBrand = () => {
                 <p className='buyOnePersonalizePara'>Personalize with engraving:</p>
               </div>
               <div className='buyOneCartButtonsDiv'>
-                <button className='buyOneCartButtons' onClick={addItemToCart} >Add to cart</button>
+                <button className='buyOneCartButtons' onClick={() => addItemToCart()} >Add to cart</button>
                 <button className='buyOneCartButtons2'>But it now</button>
               </div>
               <div className='buyOneSvgMain'>
@@ -133,7 +136,7 @@ const SingleBrand = () => {
                 <Link to='https://twitter.com/undergrndmedia' target='_blank' className='icon' ><FaXTwitter className='allAnchorsBlack buyOneSingleIcon' /></Link>
                 <Link to='https://www.instagram.com/undergroundmedia/' target='_blank' className='icon' ><FaInstagram className='allAnchorsBlack buyOneSingleIcon' /></Link>
               </div>
-              <ParserHt data = {dataToShow.body_html} />
+              <ParserHt data={dataToShow.body_html} />
             </div>
           </div>
           <BuyOneVideo src={src} />
