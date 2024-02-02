@@ -13,17 +13,6 @@ const NavLogo = (props) => {
         mainData.filter()
     }
 
-    // function callData (){
-    //     const data = store.getState().cart;
-    //     setCart(data)
-    // }
-    // useEffect(()=>{
-    //    setInterval(() => {
-    //     callData()
-    //    }, 100);
-    // },[])
-
-
     return (
         <div className='navLogo' onMouseEnter={props.handleHoverRemover} >
             <div className='search'>

@@ -1,21 +1,30 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { RxCross2 } from "react-icons/rx";
 import './SingleCartItem.css'
+import { decrementQuantity, incrementQuantity } from '../redux/CartSlice';
+import { useDispatch } from 'react-redux';
 
 const SingleCartItem = ({ item, index, removeItemFromCart }) => {
-    const [input, setInput] = useState(item.quantity);
+    const [input, setInput] = useState(0);
+    const dispatch = useDispatch();
+    useEffect(()=>{
+        setInput(item.quantity);
+    },[item.quantity])
+    // console.log(item.quantity)
     const minus = () => {
         if (input > 1) {
-            setInput(input - 1);
+            dispatch(decrementQuantity(item));
+            // setInput(input - 1);
         }
     }
     const add = () => {
-        setInput(input + 1);
+        dispatch(incrementQuantity(item));
+        // setInput(input + 1);
     }
     const handleChange = (e) => {
         setInput(e.target.value);
     }
-
+    
     return (
         <div key={index} className='ourItemCart'>
             <img style={{ width: '64px', height: '85px' }} src={item.dataToShow?.images[0]?.src} />

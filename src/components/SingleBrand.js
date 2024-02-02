@@ -57,7 +57,6 @@ const SingleBrand = () => {
     // console.log(newRelatedData);
   }
 
-
   useEffect(() => {
     fetchDataToShow();
   }, [name, id])

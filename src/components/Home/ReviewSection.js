@@ -12,7 +12,7 @@ const ReviewSection = () => {
         <h2>DON'T JUST TAKE OUR WORD FOR IT</h2>
         <p>What our customers are saying...</p>
       </div>
-      <div>
+      <div style={{padding:'20px',margin:'10px'}}>
         <Carousel
           additionalTransfrom={0}
           arrows

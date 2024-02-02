@@ -55,45 +55,7 @@
     gap: 6px;
     cursor: pointer;
 }
-.newDiv{
-    opacity: 0.8;
-    background-color: #1e1e1e;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 100
-}
-.sideCartMain {
-    height: 100%;
-    position: fixed;
-    z-index: 100001;
-    top: 0;
-    right: 0;
-    background-color: white;
-    overflow-x: hidden;
-    transition: 0.5s;
-}
 
-.sideCartDiv {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-}
-.sideCartDivCross{
-    width: 20px;
-    height: 20px;
-    border-color: #2d2d2d;
-}
-.sideCartDivHeading{
-    font-size: 20px;
-    color: #2b2b2b;;
-}
-.sideCartDiv2{
-    text-align: center;
-}
 
 .ourItemCart{
     width: 333px;
