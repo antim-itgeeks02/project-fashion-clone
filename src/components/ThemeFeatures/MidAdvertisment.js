@@ -4,7 +4,7 @@ const MidAdvertisment = () => {
     return (
         <div className='midAdvertisment'>
             <div className='midAdvertismentFirst'>
-                <img className='MidAdvertismentImage' src='https://fashionopolism-galleria.myshopify.com/cdn/shop/files/Sections.jpg?v=1701727508&width=700' />
+                <img className='MidAdvertismentImage' src='https://fashionopolism-galleria.myshopify.com/cdn/shop/files/Sections.jpg?v=1701727508&width=700' alt='Image Not Found' />
                 <div>
                     <h3 className='MidAdvertismentHeadings'>STORE SETUP MADE SIMPLE</h3>
                     <div>
@@ -23,7 +23,7 @@ const MidAdvertisment = () => {
                         <p>remove friction and increase customer</p>
                     </div>
                 </div>
-                <img className='MidAdvertismentImage' src='https://fashionopolism-galleria.myshopify.com/cdn/shop/files/Built_for_sales_fdf52103-95fc-4320-ae2a-604e41e37abf.jpg?v=1701727508&width=700' />
+                <img className='MidAdvertismentImage' src='https://fashionopolism-galleria.myshopify.com/cdn/shop/files/Built_for_sales_fdf52103-95fc-4320-ae2a-604e41e37abf.jpg?v=1701727508&width=700' alt='Image Not Found' />
             </div>
         </div>
     )

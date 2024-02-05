@@ -13,7 +13,6 @@ import Blog from './components/Pages/Blog';
 import ThemeFeature from './components/Pages/ThemeFeature';
 import ShopHover from './components/Common/ShopHover';
 import CollectionRoot from './components/Pages/CollectionRoot';
-
 import AllInformation from './components/Pages/AllInformation';
 import CartPage from './components/Pages/CartPage';
 import AllBrands from './components/AllBrands';
@@ -57,7 +56,6 @@ function App() {
             </Route>
           </Route>
         </Route>
-
         <Route path='/pages' element={<AllInformationEmpty />} >
           <Route path=':id' element={<AllInformation />} />
         </Route>

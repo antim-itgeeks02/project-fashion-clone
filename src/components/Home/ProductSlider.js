@@ -1,7 +1,6 @@
 import React from 'react'
 import { productSliderData } from '../../data/Home/ProductSliderData'
 import OurSlider from './OurSlider'
-
 import '../styles/Home/ProductSlider.css'
 import { Link } from 'react-router-dom'
 

@@ -9,7 +9,6 @@ const HPIJ = (props) => {
         <p >{props.p}</p>
         <input className='hpijInput' placeholder='Enter Your Email Address'/>
         <ButtonForBlog title={props.button}/>
-
     </div>
   )
 }

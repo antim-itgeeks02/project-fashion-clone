@@ -8,13 +8,7 @@ const WithStyles = ({ item }) => {
       <h3 style={{color:'#2b2b2b',fontSize:'18px'}}>{item.para1}</h3>
       <p style={{color:'#2b2b2b',fontSize:'15px'}}>{item.para2}</p>
       <p style={{color:'#2b2b2b',fontSize:'15px'}}>{item.para3}</p>
-      <div>
-        <Star />
-        <Star />
-        <Star />
-        <Star />
-        <Star />
-      </div>
+      <div className=' flex'><Star /><Star /><Star /><Star /><Star /></div>
     </div>
   )
 }

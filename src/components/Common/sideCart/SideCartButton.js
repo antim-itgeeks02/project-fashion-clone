@@ -1,33 +1,23 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { RxCross2 } from "react-icons/rx";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import SingleCartItem from '../../carts/SingleCartItem';
 import { removeFromCart } from '../../redux/CartSlice';
 import { useDispatch, useSelector } from 'react-redux';
-import { store } from '../../redux/Store';
 import './SideCartButton.css'
 import { Link } from 'react-router-dom';
 
 const SideCartButton = (props) => {
-    // const [width, setWidth] = useState(0);
-    // const [cart, setCart] = useState([]);
     const dispatch = useDispatch()
     const showCart = () => {
-        // setWidth(26);
         props.settingTrue();
     }
     const hideCart = () => {
-        // setWidth(0);
         props.settingTrue();
     }
-    // const data = store.getState().cart;
-    // setCart(data)
     const { cart } = useSelector(state => state);
-    // console.log(cart)
     function removeItemFromCart(item) {
-        console.log("Clicked")
         dispatch(removeFromCart(item.id));
-        // console.log(cart)
     }
     var subTotal = 0;
     if (cart.length > 0) {
@@ -35,7 +25,6 @@ const SideCartButton = (props) => {
             return (item.quantity* item.dataToShow.variants[0].price)
         })
         subTotal = funToGetPrice.reduce((acc, crr) => Number(acc) + Number(crr));
-        console.log(subTotal)
     }
     var subTotalQuantity = 0;
     if (cart.length > 0) {
@@ -43,13 +32,11 @@ const SideCartButton = (props) => {
             return item.quantity
         })
         subTotalQuantity = funToGetItem.reduce((acc, crr) => Number(acc) + Number(crr));
-        console.log(subTotalQuantity)
     }
     useEffect(()=>{
-        if(!props.sideShow && cart.length){
+        if(props.sideShow && cart.length){
             props.settingTrue();
         }
-        // props.settingTrue();
     },[cart])
 
     return (

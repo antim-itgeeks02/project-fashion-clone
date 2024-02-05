@@ -27,9 +27,9 @@ const Header = () => {
                 <Link to='https://www.instagram.com/undergroundmedia/' target='_blank' className='icon' ><FaInstagram  /></Link>
             </div>
             <div className='advertisment'>
-                <MdKeyboardArrowLeft onClick={prevButton} className='arrowButtons' />
+                <MdKeyboardArrowLeft onClick={prevButton} className='arrowButtons cursor-pointer' />
                 <p>{headerData[current].offer}</p>
-                <MdKeyboardArrowRight onClick={nextButton} className='arrowButtons' />
+                <MdKeyboardArrowRight onClick={nextButton} className='arrowButtons cursor-pointer' />
             </div>
             <div>
             </div>

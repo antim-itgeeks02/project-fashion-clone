@@ -4,7 +4,6 @@ import { BiSupport } from "react-icons/bi";
 import { ImEqualizer } from "react-icons/im";
 import '../styles/ThemeFeature/Benifits.css'
 
-
 const Benifits = () => {
     return (
         <div className='benifits'>

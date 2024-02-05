@@ -18,7 +18,7 @@ import AllProductsThreeInLine from './Collection/Reusable/AllProductsThreeInLine
 import MidAdBuyOne from './BuyOne/MidAdBuyOne';
 import '../components/styles/BuyOne.css'
 import ParserHt from './BuyOne/ParserHt';
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { addToCard } from './redux/CartSlice';
 
 const SingleBrand = () => {
@@ -37,24 +37,21 @@ const SingleBrand = () => {
     setInput(e.target.value);
   }
   const { name } = useParams();
-
   const { id } = useParams();
 
   const [dataToShow, setDataToShow] = useState([]);
   const [newRelatedData, setnewRelatedData] = useState([]);
-  // const [clickValue,setClickValue] = useState()
+
   async function fetchDataToShow() {
     // API for One Product
     const response = await fetch(`https://fashionopolism-galleria.myshopify.com/collections/${name}/products/${id}.json`);
     const mainData = await response.json();
     setDataToShow(mainData.product);
-    // console.log(dataToShow);
 
     // API for all Other Related
     const res = await fetch(`https://fashionopolism-galleria.myshopify.com/collections/${name}/products.json`);
     var otherData = await res.json();
     setnewRelatedData(otherData.products.filter((item) => item.title !== mainData.product.title))
-    // console.log(newRelatedData);
   }
 
   useEffect(() => {
@@ -63,11 +60,10 @@ const SingleBrand = () => {
 
   // redux
   const dispatch = useDispatch();
-
-  const datToSend={
-    dataToShow:dataToShow,
-    id:dataToShow.id,
-    quantity:input
+  const datToSend = {
+    dataToShow: dataToShow,
+    id: dataToShow.id,
+    quantity: input
   }
   const addItemToCart = () => {
     dispatch(addToCard(datToSend));
@@ -90,7 +86,7 @@ const SingleBrand = () => {
                 <div >
                   <button className='buyOneLeftRightButton'><FaChevronLeft /></button>
                   <button className='buyOneLeftRightButton' ><FaChevronRight /></button>
-                </div>{/*onClick={leftClick}*/}{/*onClick={rifhtClick}*/}
+                </div>
               </div>
               <div className='buyOneFeaturesMain'>
                 <div className='buyOneFeatures'>

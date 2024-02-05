@@ -3,7 +3,6 @@ import '../styles/Collections/Collection/ShopBuyBrand.css'
 import {ShopByBrandData} from '../../data/Collection/ShopByBrandData'
 import ShopByBrandResuble from './Reusable/ShopByBrandResuble'
 
-
 const ShopByBrand = () => {
   return (
     <div className='shopBuyBrand'>

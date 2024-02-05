@@ -10,16 +10,13 @@ const CartPageSingleCard = ({ item, index, removeItemFromCart }) => {
     useEffect(() => {
         setInput(item.quantity);
     }, [item.quantity])
-    // console.log(item.quantity)
     const minus = () => {
         if (input > 1) {
             dispatch(decrementQuantity(item));
-            // setInput(input - 1);
         }
     }
     const add = () => {
         dispatch(incrementQuantity(item));
-        // setInput(input + 1);
     }
     const handleChange = (e) => {
         setInput(e.target.value);
@@ -28,7 +25,7 @@ const CartPageSingleCard = ({ item, index, removeItemFromCart }) => {
         <div key={index} className='cartPageSingleCardMain'>
             <div className='cartPageSingleCardSubMain'>
                 <div className='cartPageSingleCardImageTitleDiv'>
-                    <img src={item.dataToShow?.images[0]?.src} className='cartPageSingleCardImage' />
+                    <img src={item.dataToShow?.images[0]?.src} className='cartPageSingleCardImage' alt='Not Found'/>
                     <p>{item.dataToShow.title}</p>
                 </div>
                 <div className='cartPageSingleCardSubMain2'>

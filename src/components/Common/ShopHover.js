@@ -7,7 +7,7 @@ const ShopHover = (props) => {
     const watch = 'https://fashionopolism-galleria.myshopify.com/cdn/shop/files/gallerie-006.jpg?v=1614313156&width=1200'
     return (
         <div className='shopHoverMain' onMouseLeave={props.handleHoverRemover}>
-            <img className='shopHoverImg' src={watch} />
+            <img className='shopHoverImg' src={watch} alt='Image Not Found' />
             <div className='shopHoverAllDiv'>
                 {
                     shopData.map((shop, index) => {

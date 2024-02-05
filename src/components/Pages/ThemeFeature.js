@@ -10,13 +10,13 @@ import FaQ from '../ThemeFeatures/FaQ'
 const ThemeFeature = () => {
   return (
     <>
-        <VideoTheme/>
-        <CompanyHistory/>
-        <Benifits/>
-        <MidAdvertisment/>
-        <AdvanceFeatures/>
-        <AllHighlights/>
-        <FaQ/>
+      <VideoTheme />
+      <CompanyHistory />
+      <Benifits />
+      <MidAdvertisment />
+      <AdvanceFeatures />
+      <AllHighlights />
+      <FaQ />
     </>
   )
 }

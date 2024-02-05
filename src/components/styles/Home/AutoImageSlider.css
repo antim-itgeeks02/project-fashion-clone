@@ -7,7 +7,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: all 0.7s ease;
+    /* animation-name: autoImageSlider;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    overflow: hidden;
+    z-index: -100; */
+}
+@keyframes autoImageSlider {
+    0%{ transform: scale(1);}
+    50%{ transform: scale(1.05);}
+    100%{ transform: scale(1.1);}
 }
 
 .autoImageSliderContainer h2 {

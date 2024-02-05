@@ -18,7 +18,7 @@ const MidAdBuyOne = () => {
                     <p style={{fontSize:'15px'}}>Meticulously crafted with the finest materials, our watches embody a legacy of sophistication, offering not just an accessory, but a statement of refined taste.</p>
                     <p style={{fontSize:'15px'}}>Elevate every moment with unparalleled accuracy and unparalleled style – a true embodiment of Swiss craftsmanship."</p>
                 </div>
-                <img className='midAdBuyOneImage' src='https://fashionopolism-galleria.myshopify.com/cdn/shop/files/galleria-fashionopolism--shopify-2.jpg?v=1693507905&width=700' />
+                <img className='midAdBuyOneImage' src='https://fashionopolism-galleria.myshopify.com/cdn/shop/files/galleria-fashionopolism--shopify-2.jpg?v=1693507905&width=700' alt='Image Not Found'/>
             </div>
         </div>
     )

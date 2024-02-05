@@ -21,7 +21,7 @@ const AllInformation = () => {
                     <p>This admiration evolved into a mission: to provide discerning individuals with access to exceptional timepieces that mirror their refined sensibilities.</p>
                     <p>Each watch in our collection tells a story of dedication, innovation, and the pursuit of perfection that Swiss craftsmanship embodies.</p>
                 </div>
-                <img className='infoImageTextImage' src='https://fashionopolism-galleria.myshopify.com/cdn/shop/files/galleria-fashionopolism--shopify-4.jpg?v=1693507906&width=1200' />
+                <img className='infoImageTextImage' src='https://fashionopolism-galleria.myshopify.com/cdn/shop/files/galleria-fashionopolism--shopify-4.jpg?v=1693507906&width=1200'alt='Image Not Found' />
             </div>
             <div className='infoDataMain'>
                 {

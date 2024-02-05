@@ -51,6 +51,7 @@
 }
 .open{
     transform: none;
+    overflow: hidden;
 }
 
 .sideCartDivCross {

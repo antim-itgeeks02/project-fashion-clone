@@ -14,7 +14,6 @@ const FeaturedProducts = () => {
                             <ShopByBrandResuble key={index} watch={watch} />
                         )
                     })
-
                 }
             </div>
         </div>

@@ -4,7 +4,6 @@ import { ImEqualizer } from "react-icons/im";
 import { MdLaptopChromebook } from "react-icons/md";
 import { BsCameraReelsFill } from "react-icons/bs";
 
-
 const AdvanceFeatures = () => {
     return (
         <div className='advanceFeatures'>

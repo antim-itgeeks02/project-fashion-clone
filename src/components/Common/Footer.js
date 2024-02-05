@@ -12,7 +12,7 @@ import { ReactComponent as AMERICAN } from '../svg/american.svg';
 import { ReactComponent as PAYPAL } from '../svg/paypal.svg';
 import { ReactComponent as UNK } from '../svg/unk.svg';
 import { ReactComponent as DISCOVER } from '../svg/discover.svg';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 const Footer = () => {
     return (
         <div className='footerParent'>
@@ -34,7 +34,7 @@ const Footer = () => {
 
                                             obj.list.map((item, index) => {
                                                 return (
-                                                    <Link to={item.path}  key={index} className='allAnchorsBlack'><p> {item.name}</p></Link>
+                                                    <Link to={item.path} key={index} className='allAnchorsBlack'><p> {item.name}</p></Link>
                                                 )
                                             })
 
@@ -48,9 +48,9 @@ const Footer = () => {
             <div className='lowerFooter'>
                 <div className='lowerFooterDiv1'>
                     <div className='iconsFoo'>
-                    <Link to='https://www.facebook.com/ugmedia' target='_blank' className='allAnchorsBlack'><FaFacebookF /></Link>
-                    <Link to='https://www.facebook.com/ugmedia' target='_blank' className='allAnchorsBlack'><FaXTwitter /></Link>
-                    <Link to='https://www.facebook.com/ugmedia' target='_blank' className='allAnchorsBlack'><FaInstagram /></Link>
+                        <Link to='https://www.facebook.com/ugmedia' target='_blank' className='allAnchorsBlack'><FaFacebookF /></Link>
+                        <Link to='https://www.facebook.com/ugmedia' target='_blank' className='allAnchorsBlack'><FaXTwitter /></Link>
+                        <Link to='https://www.facebook.com/ugmedia' target='_blank' className='allAnchorsBlack'><FaInstagram /></Link>
                     </div>
                     <p>© 2024 Fashionopolism Galleria • Powered by Shopify</p>
                 </div>
@@ -62,11 +62,11 @@ const Footer = () => {
                     </button>
                     <div className='svgDiv'>
                         <VISA />
-                        <MASTER/>
-                        <AMERICAN/>
-                        <PAYPAL/>
-                        <UNK/>
-                        <DISCOVER/>
+                        <MASTER />
+                        <AMERICAN />
+                        <PAYPAL />
+                        <UNK />
+                        <DISCOVER />
                     </div>
                 </div>
             </div>

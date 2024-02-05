@@ -7,7 +7,6 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 const OurSlider = ({ products }) => {
-
     return (
 
             <Carousel
@@ -66,7 +65,7 @@ const OurSlider = ({ products }) => {
                 {products.map((product, index) => {
                     return (
                         <div className='singleProduct' key={index}>
-                            <Link to={product.path}><img className='singleProductImage' src={product.image} /></Link>
+                            <Link to={product.path}><img className='singleProductImage' src={product.image} alt='Not Found' /></Link>
                             <div className='singleProductFirstSpan'>QUICK<br /> SHOP</div>
                             <Link to={product.path} className='allAnchorsBlack'><p>{product.brand}</p>
                                 <p>{product.name}</p></Link>

@@ -14,12 +14,11 @@ const Subscribe = () => {
             </div>
             <div className='rightDiv'>
                 <input placeholder='Enter Your Email Address' type='search' />
-                <div className='iconsSub'>
+                <div className='iconsSub flex gap-5'>
                     <Link to='https://www.facebook.com/ugmedia' target='_blank'><FaFacebookF className='icon' /></Link>
                     <Link to='https://twitter.com/undergrndmedia' target='_blank'><FaXTwitter className='icon' /></Link>
                     <Link to='https://www.instagram.com/undergroundmedia/' target='_blank'><FaInstagram className='icon' /></Link>
                 </div>
-
             </div>
         </div>
     )

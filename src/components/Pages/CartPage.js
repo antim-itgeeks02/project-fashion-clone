@@ -3,38 +3,29 @@ import HeadingBanner from '../Collection/Reusable/HeadingBanner'
 import { Link } from 'react-router-dom'
 import { IoIosArrowBack } from "react-icons/io";
 import '../styles/CartPage.css'
-// import { cart } from '../redux/Store';
 import { useDispatch, useSelector } from 'react-redux';
-import SingleCartItem from '../carts/SingleCartItem';
 import { removeFromCart } from '../redux/CartSlice';
 import CartPageSingleCard from '../carts/CartPageSingleCard';
 
 const CartPage = () => {
     const src = 'https://fashionopolism-galleria.myshopify.com/cdn/shop/files/gallerie-002.jpg?v=1614313030&width=1200'
-    // const Products = useSelector((state) => state.cart);
-    // console.log(Products);
     const { cart } = useSelector(state => state);
     const dispatch = useDispatch();
     function removeItemFromCart(item) {
-        console.log("Clicked")
         dispatch(removeFromCart(item.id));
-        // console.log(cart)
     }
     if (cart.length > 0) {
         var funToGetPrice = cart.map((item) => {
-            return (item.quantity* item.dataToShow.variants[0].price)
+            return (item.quantity * item.dataToShow.variants[0].price)
         })
         var subTotal = funToGetPrice.reduce((acc, crr) => Number(acc) + Number(crr));
-        console.log(subTotal)
     }
     if (cart.length > 0) {
         var funToGetItem = cart.map((item) => {
             return item.quantity
         })
         var subTotalQuantity = funToGetItem.reduce((acc, crr) => Number(acc) + Number(crr));
-        console.log(subTotalQuantity)
     }
-    if(funToGetPrice && funToGetItem)
     return (
         <div>
             <HeadingBanner src={src} />
@@ -60,8 +51,8 @@ const CartPage = () => {
                                 <div className='bottomTotalDivUpper specialGrey'>
                                     <p>Leave a note with your order</p>
                                     <p>+</p>
-                                    </div>
-                                <div className='bottomTotalDivUpper' style={{borderBottom:'1px solid #d5d5d5'}}>
+                                </div>
+                                <div className='bottomTotalDivUpper' style={{ borderBottom: '1px solid #d5d5d5' }}>
                                     <p>Subtotal</p>
                                     <p>$ {subTotal}.00</p>
                                 </div>
@@ -70,13 +61,13 @@ const CartPage = () => {
                                 <div className='bottomTotalDivUpper specialGrey'>
                                     <p>Get shipping estimate</p>
                                     <p>+</p>
-                                    </div>
+                                </div>
                                 <div className='bottomTotalDivUpper'>
                                     <p>Total</p>
                                     <p>$ {subTotal}.00</p>
                                 </div>
                             </div>
-                            <div className='buttonCheckOut' style={{width:'fit-content'}}>Check Out</div>
+                            <div className='buttonCheckOut' style={{ width: 'fit-content' }}>Check Out</div>
                         </div>
                     </div>) :
                     (

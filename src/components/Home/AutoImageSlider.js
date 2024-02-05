@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../styles/Home/AutoImageSlider.css'
 import { imageData } from '../../data/Home/AutoImageSliderData'
 import { Link } from 'react-router-dom';
@@ -32,7 +32,7 @@ const AutoImageSlider = () => {
     const background = imageData[currentIndex].image;
 
     return (
-        <div style={{ backgroundImage: `url(${background})` }} className='autoImageSliderContainer'>
+        <div style={{ backgroundImage: `url(${background})` }} className='autoImageSliderContainer' >
             <div className='autoImageSliderContainer'>
                 <h2>{imageData[currentIndex].heading}</h2>
                 <p>{imageData[currentIndex].para}</p>

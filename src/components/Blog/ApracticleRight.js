@@ -8,7 +8,7 @@ const ApracticleRight = ({image}) => {
     <div className='aPracticleright'>
                     <div className='meetDiv'>
                         <h4 className='meetDivHeading'>Meet Jeff</h4>
-                        <img className='meetDivImage' src='https://fashionopolism-galleria.myshopify.com/cdn/shop/files/gallerie-009.jpg?v=1614313158&width=400' />
+                        <img className='meetDivImage' src='https://fashionopolism-galleria.myshopify.com/cdn/shop/files/gallerie-009.jpg?v=1614313158&width=400' alt='Image Not Found'/>
                         <p >Our resident Blogger with over 20 years of experience working with luxury Timepiece brands.</p>
                     </div>
                     <HPIJ h4='Signup for more'
