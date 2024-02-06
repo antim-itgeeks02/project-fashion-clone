@@ -1,14 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { bannerData } from '../../data/Home/BannerData'
 import Button from './Button'
 import '../styles/Home/Category.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Category = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <div className='banner'>
       {bannerData.map((banner, index) => {
         return (
-          <div className='bannerSmall' style={{ backgroundImage : `url(${banner.image})`}} key={index} >
+          <div data-aos="fade-right" className='bannerSmall' style={{ backgroundImage : `url(${banner.image})`}} key={index} >
             <h3>{banner.heading}</h3>
             <p>{banner.para}</p>
             <Button path={banner.path} title={banner.name} />

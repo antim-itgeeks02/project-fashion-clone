@@ -1,4 +1,4 @@
-export const  shopData = [
+export const shopData = [
     {
         heading: 'Shop by style', link: '/#', list: [{ name: 'Chronographs', path: '/collections/chronographs' },
         { name: 'Dress Watches', path: '/collections/dress-watches' }, { name: 'Premier Watches', path: '/collections/premier-watches' },
@@ -11,7 +11,8 @@ export const  shopData = [
         { name: 'Hublot', path: '/collections/hublot' },
         { name: 'Breitling', path: '/collections/breitling' },
         { name: 'Audemars Piguet', path: '/collections/audemars-piguet' }]
-    }, {
+    },
+    {
         heading: 'Information', link: '/pages/about-us', list: [{ name: 'Shipping', path: '/pages/shipping' },
         { name: 'From the Blog', path: '/blogs/news' },
         { name: 'Returns', path: '/pages/returns' },

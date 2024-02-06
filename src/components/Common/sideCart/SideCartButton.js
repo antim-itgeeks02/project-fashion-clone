@@ -18,6 +18,7 @@ const SideCartButton = (props) => {
     const { cart } = useSelector(state => state);
     function removeItemFromCart(item) {
         dispatch(removeFromCart(item.id));
+        console.log("dispatched")
     }
     var subTotal = 0;
     if (cart.length > 0) {

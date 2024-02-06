@@ -4,7 +4,8 @@ import { FaSearch } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import SideCartButton from './sideCart/SideCartButton';
 import LoadingNow from '../LoadingNow';
-import NewComponent from '../NewComponent';
+import { shopData } from '../../data/Common/ShopData';
+import NewCompo2 from '../NewCompo2';
 
 const NavLogo = (props) => {
     const [toSearch, setToSearch] = useState('');
@@ -27,9 +28,20 @@ const NavLogo = (props) => {
         setLod(false)
     }
     var ankit;
+    var choudhary=[];
     const functionThatHandle = () => {
         if (dataToBeSearched.length > 0) {
             ankit = dataToBeSearched.filter((item) => (item.title.toLocaleLowerCase().includes(toSearch.toLocaleLowerCase()) || (item.vendor.toLocaleLowerCase().includes(toSearch.toLocaleLowerCase()))))
+            // shopData.filter
+            var patel=[];
+            shopData.map((item) => {
+                for (let i = 0; i < item.list.length; i++) {
+                    patel.push(item.list[i]);
+                }
+            })
+            choudhary = patel.filter((item)=>item.name.toLocaleLowerCase().includes(toSearch.toLocaleLowerCase()));
+
+            
         }
         else {
             console.log("nhi hai data")
@@ -47,7 +59,7 @@ const NavLogo = (props) => {
                 <button className='searchButton'><FaSearch /></button>
                 <div>
                     {
-                        lod ? (<LoadingNow/>):(toSearch.length > 0 && <NewComponent data={ankit} />)
+                        lod ? (<LoadingNow />) : (toSearch.length > 0 && <NewCompo2 ankit = {ankit} choudhary={choudhary}/>)
                     }
                 </div>
             </div>

@@ -34,7 +34,7 @@ const SingleCartItem = ({ item, index, removeItemFromCart }) => {
                 </div>
             </div>
             <div className='divToFlex' style={{alignItems:'flex-end'}}>
-                <RxCross2 className='sideCartDivCross' onClick={() => removeItemFromCart(item)} />
+                <RxCross2 className='sideCartDivCross cursor-pointer' onClick={() => removeItemFromCart(item)} />
                 <p>${item.dataToShow?.variants[0]?.price}</p>
             </div>
         </div>

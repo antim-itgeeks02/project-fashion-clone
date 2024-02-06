@@ -9,7 +9,7 @@ const LoginPage = () => {
   }
   return (
     <>
-      <form className=" container mx-auto mt-[6%] w-[28%] flex flex-col gap-2 text-[#2b2b2b] h-[90vh] font-bold text-[15px] tracking-[0.5px]">
+      <form id='noUse' className=" container mx-auto mt-[6%] w-[28%] flex flex-col gap-2 text-[#2b2b2b] h-[90vh] font-bold text-[15px] tracking-[0.5px]">
         <h1 className=' text-[23px] mx-auto py-5'>Login</h1>
         <div className='flex flex-col gap-1'>
           <label for="email" >Email</label>

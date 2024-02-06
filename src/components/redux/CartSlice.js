@@ -23,10 +23,11 @@ export const CartSlice = createSlice({
       }
     },
     removeFromCart: (state, action) => {
-      console.log(action.payload)
-      state.filter((item) => item.id !== action.payload);
-      localStorage.setItem('cart', JSON.stringify(state));
-      return
+      const update = state.filter((item) => item.id !== action.payload);
+      console.log(update)
+
+      localStorage.setItem('cart', JSON.stringify(update));
+      return update
     },
     incrementQuantity: (state, action) => {
       for (let i = 0; i < state.length; i++) {

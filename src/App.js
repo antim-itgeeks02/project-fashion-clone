@@ -22,6 +22,7 @@ import APracticleGuide from './components/Blog/APracticleGuide';
 import MillionairesBlog from './components/Blog/MillionairesBlog';
 import LastBlog from './components/Blog/LastBlog';
 import LoginPage from './components/Pages/LoginPage';
+import CheckOutPage from './components/Pages/CheckOutPage';
 function App() {
   const [show, setShow] = useState(false);
   const [sideShow, setsideShow] = useState(false);
@@ -64,6 +65,7 @@ function App() {
         <Route path='/blogs/news/78257155-watches-of-wall-street' element={<LastBlog />} />
         <Route path='/cart' element={<CartPage />} />
         <Route path='/account/login' element={<LoginPage />} />
+        <Route path='/checkouts' element={<CheckOutPage/>} />
       </Routes>
       <Subscribe />
       <Footer />
