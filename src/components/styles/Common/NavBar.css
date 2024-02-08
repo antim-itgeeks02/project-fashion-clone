@@ -8,13 +8,19 @@
     letter-spacing: 1px;
     margin: 2.5%;
     margin-bottom: 1.5%;
-    position: relative;
+    /* position: relative; */
     /* position: fixed; */
     /* top: 0;
     width: 100%;
     z-index: 123;
     background-color: white; */
+
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    background-color: white;
 }
+
 .navItem{
     padding: 0 10px;
     display: flex;

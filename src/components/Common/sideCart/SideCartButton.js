@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { RxCross2 } from "react-icons/rx";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import SingleCartItem from '../../carts/SingleCartItem';
@@ -34,9 +34,12 @@ const SideCartButton = (props) => {
         })
         subTotalQuantity = funToGetItem.reduce((acc, crr) => Number(acc) + Number(crr));
     }
+    const count = useRef(0);
     useEffect(()=>{
-        if(props.sideShow && cart.length){
+        if(!props.sideShow && cart.length && count.current>1){
             props.settingTrue();
+        } else{
+            count.current=count.current+1;
         }
     },[cart])
 

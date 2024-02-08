@@ -16,7 +16,6 @@ const NavBar = (props) => {
               <Link to={nav.path} key={index} className='navItem'><p onMouseEnter={props.handleHover} className='flex gap-1 items-center' ><li className='list-none'>{nav.item}</li><MdKeyboardArrowDown className='navItemArrow' /></p></Link>
             ) :
             (<Link to={nav.path} key={index} className='navItem'><p onMouseEnter={props.handleHoverRemover}>{nav.item}</p></Link>)
-            
         )
       })}
     </div>

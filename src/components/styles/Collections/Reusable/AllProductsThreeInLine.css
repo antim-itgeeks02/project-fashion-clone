@@ -41,7 +41,7 @@
 }
 .allProductsThreeInLineSibleDiv:hover .firstSpan{
     opacity: 1;
-    z-index: 12015;
+    z-index: 500;
 }
 .singleProductFirstSpan{
     position: absolute;

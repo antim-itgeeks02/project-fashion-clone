@@ -23,6 +23,7 @@ import MillionairesBlog from './components/Blog/MillionairesBlog';
 import LastBlog from './components/Blog/LastBlog';
 import LoginPage from './components/Pages/LoginPage';
 import CheckOutPage from './components/Pages/CheckOutPage';
+import GoToTop from './components/Pages/GoToTop';
 function App() {
   const [show, setShow] = useState(false);
   const [sideShow, setsideShow] = useState(false);
@@ -69,6 +70,7 @@ function App() {
       </Routes>
       <Subscribe />
       <Footer />
+      <GoToTop/>
     </BrowserRouter>
   );
 }
