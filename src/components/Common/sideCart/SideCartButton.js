@@ -71,7 +71,7 @@ const SideCartButton = (props) => {
                             <div className='belowCartDiv'>
                                 <div className='belowCartDivItem'><p>Subtotal</p><p>$ {subTotal}.00</p></div>
                                 <div className='belowCartDivItem'><p>Total</p><p>$ {subTotal}.00</p></div>
-                                <div className='belowCartDivButtons'><Link className='allAnchorsBlack' to={'/cart'}><div className='buttonViewCart'>View Cart</div></Link><div className='buttonCheckOut'>Check Out</div></div>
+                                <div className='belowCartDivButtons'><Link className='allAnchorsBlack' to={'/cart'}><div className='buttonViewCart'>View Cart</div></Link><Link to={'/checkouts'}><div className='buttonCheckOut'>Check Out</div></Link></div>
                             </div>
                         </div>
                     ) :

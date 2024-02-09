@@ -69,8 +69,8 @@ function App() {
         <Route path='/checkouts' element={<CheckOutPage/>} />
       </Routes>
       <Subscribe />
-      <Footer />
       <GoToTop/>
+      <Footer />
     </BrowserRouter>
   );
 }

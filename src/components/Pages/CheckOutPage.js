@@ -6,22 +6,25 @@ import { IoLockClosedOutline } from "react-icons/io5";
 import { AiOutlineQuestionCircle } from "react-icons/ai";
 
 const CheckOutPage = () => {
-  const [toHide,setToHide] = useState(false);
-  // const [formData , setFormData]={
-  //   email:'',
-  //   // checkBoxEmail,
-  //   selectCountry:'',
-  //   firstName:'',
-  //   lastName:'',
-  //   address:'',
-  //   postalCode:'',
-  //   city:'',
-  //   // checkBoxSave,
-  //   cardNumber:'',
-  //   expDate:'',
-  //   securityCode:'',
-  //   // billingBox,
-  // }
+  const [toHide, setToHide] = useState(false);
+  const [formData, setFormData] = useState({
+    email: '', checkBoxEmail: false, selectCountry: '', firstName: '',
+    lastName: '', address: '', apartment: '', postalCode: '', city: '',
+    checkBoxSave: false, cardNumber: '', expDate: '', cardName: '',
+    securityCode: '', billingBox: true, billingCountry: '', billingFirstName: '',
+    billingLastName: '', billingAddress: '', billingApartment: '', billingCity: '',
+    billingPostalCode: ''
+  })
+  const handleChange = (event) => {
+    const { name, type, value, checked } = event.target;
+    setFormData(prevFormData => {
+      return {
+        ...prevFormData,
+        [name]: type === 'checkBox' ? checked : value
+      }
+    })
+  }
+  console.log(formData)
   const handleSubmit = (event) => {
     event.preventDefault();
   }
@@ -51,10 +54,14 @@ const CheckOutPage = () => {
 
             <div className='flex gap-3 flex-col'>
               <h2 className='text-[24px] font-semibold'>Contact</h2>
-              <input required className='border border-[#d5d5d5] p-[13.5px] py-[11px] rounded-md outline-sky-600' name='email' type='email' placeholder='Email' />
+              <input onChange={handleChange}
+                className='border border-[#d5d5d5] p-[13.5px] py-[11px] rounded-md outline-sky-600'
+                required name='email' type='email' placeholder='Email' value={formData.email} />
               <div className='flex gap-2 items-center'>
-                <input className='border-[#d5d5d5]' name='checkBoxEmail' type='checkBox' id='checkBoxEmail' />
-                <label for='checkBoxEmail'>Email me with news and offers</label>
+                <input onChange={handleChange}
+                  className='border-[#d5d5d5]'
+                  name='checkBoxEmail' type='checkBox' id='checkBoxEmail' checked={formData.checkBoxEmail} />
+                <label htmlFor='checkBoxEmail'>Email me with news and offers</label>
               </div>
             </div>
 
@@ -62,8 +69,9 @@ const CheckOutPage = () => {
               <h2 className='text-[24px] font-semibold'>Delivery</h2>
               <div className='relative'>
                 <label className='absolute text-[grey] text-[13px] pl-[15px] pt-[9px]'>Country/Region</label>
-                <select required className='border-[#d5d5d5]  border rounded-md pt-[21px] pr-[30px] pl-[11px] pb-[11px] outline-sky-600 w-full'
-                  name='selectCountry' >
+                <select onChange={handleChange}
+                  required className='border-[#d5d5d5]  border rounded-md pt-[21px] pr-[30px] pl-[11px] pb-[11px] outline-sky-600 w-full'
+                  name='selectCountry' value={formData.selectCountry} >
                   <option>India</option>
                   <option>US</option>
                   <option>America</option>
@@ -73,28 +81,42 @@ const CheckOutPage = () => {
               </div>
 
               <div className='flex gap-5'>
-                <input className='border-[#d5d5d5] border rounded-md p-[13.5px] py-[11px] w-1/2 outline-sky-600 ' name='firstName' type='text' placeholder='First Name (optional)' />
-                <input required className='border-[#d5d5d5] border rounded-md p-[13.5px] py-[11px] w-1/2 outline-sky-600' name='lastName' type='text' placeholder='last Name' />
+                <input onChange={handleChange}
+                  className='border-[#d5d5d5] border rounded-md p-[13.5px] py-[11px] w-1/2 outline-sky-600 '
+                  name='firstName' value={formData.firstName} type='text' placeholder='First Name (optional)' />
+                <input onChange={handleChange}
+                  required className='border-[#d5d5d5] border rounded-md p-[13.5px] py-[11px] w-1/2 outline-sky-600'
+                  name='lastName' value={formData.lastName} type='text' placeholder='last Name' />
               </div>
 
               <div className='flex items-center relative '>
-                <input required placeholder='Address' name='address' type='text' className='border-[#d5d5d5] rounded-md border w-full outline-sky-600 p-[13.5px] py-[11px] ' />
+                <input onChange={handleChange}
+                  required className='border-[#d5d5d5] rounded-md border w-full outline-sky-600 p-[13.5px] py-[11px] '
+                  name='address' value={formData.address} type='text' placeholder='Address' />
                 <div className='absolute right-3'><CiSearch /></div>
               </div>
 
               <div>
-                <div onClick={()=>{setToHide(true)}} className={`${toHide?'hidden':'visible' } text-[#1990c6] hover:text-[#20aceb] pl-1 text-[15px]`}>+ Add apartment, suit, etc.</div>
-                <input placeholder='Apartment, suit, etc. (optional)' type='text' className={`${toHide?'visible':'hidden' } border-[#d5d5d5] rounded-md border w-full outline-sky-600 p-[13.5px] py-[11px] `} />
+                <div onClick={() => { setToHide(true) }} className={`${toHide ? 'hidden' : 'visible'} text-[#1990c6] hover:text-[#20aceb] pl-1 text-[15px]`}>+ Add apartment, suit, etc.</div>
+                <input onChange={handleChange}
+                  className={`${toHide ? 'visible' : 'hidden'} border-[#d5d5d5] rounded-md border w-full outline-sky-600 p-[13.5px] py-[11px] `}
+                  value={formData.apartment} type='text' placeholder='Apartment, suit, etc. (optional)' />
               </div>
 
               <div className='flex gap-5'>
-                <input required className='border-[#d5d5d5] rounded-md border p-[13.5px] py-[11px] w-1/2 outline-sky-600 ' name='postalCode' type='text' placeholder='Postal Code' />
-                <input required className='border-[#d5d5d5] rounded-md border p-[13.5px] py-[11px] w-1/2 outline-sky-600' name='city' type='text' placeholder='City' />
+                <input onChange={handleChange}
+                  required className='border-[#d5d5d5] rounded-md border p-[13.5px] py-[11px] w-1/2 outline-sky-600 '
+                  name='postalCode' value={formData.postalCode} type='text' placeholder='Postal Code' />
+                <input onChange={handleChange}
+                  required className='border-[#d5d5d5] rounded-md border p-[13.5px] py-[11px] w-1/2 outline-sky-600'
+                  name='city' value={formData.city} type='text' placeholder='City' />
               </div>
 
               <div className='flex gap-2 items-center text-[14px]'>
-                <input className='border-[#d5d5d5]' required type='checkBox' id='checkBoxSave' name='checkBoxSave' />
-                <label for='checkBoxSave'>Save this information for next time</label>
+                <input onChange={handleChange}
+                  className='border-[#d5d5d5]'
+                  name='checkBoxSave' checked={formData.checkBoxSave} type='checkBox' id='checkBoxSave' />
+                <label htmlFor='checkBoxSave'>Save this information for next time</label>
               </div>
 
               <div className='flex flex-col gap-2'>
@@ -114,27 +136,38 @@ const CheckOutPage = () => {
 
                 <div className='p-[17px] bg-[#0000000B] border flex flex-col gap-4'>
                   <div className='flex items-center relative '>
-                    <input placeholder='Card number' required type='text' name='cardNumber' className='border-[#d5d5d5] rounded-md border w-full outline-sky-600 p-[13.5px] py-[11px] ' />
+                    <input onChange={handleChange}
+                      required className='border-[#d5d5d5] rounded-md border w-full outline-sky-600 p-[13.5px] py-[11px] '
+                      name='cardNumber' value={formData.cardNumber} type='text' placeholder='Card number' />
                     <div className='absolute right-3'><IoLockClosedOutline className='text-[grey]' /></div>
                   </div>
                   <div className='flex gap-5'>
-                    <input className='border-[#d5d5d5] rounded-md border p-[13.5px] py-[11px] w-1/2 outline-sky-600 ' required type='text' name='expDate' placeholder='Expiration date (MM/YY)' />
+                    <input onChange={handleChange}
+                      required className='border-[#d5d5d5] rounded-md border p-[13.5px] py-[11px] w-1/2 outline-sky-600 '
+                      name='expDate' value={formData.expDate} type='text' placeholder='Expiration date (MM/YY)' />
                     <div className='flex items-center relative w-1/2 '>
-                      <input placeholder='Security code' required name='securityCode' type='text' className='border-[#d5d5d5] rounded-md border w-full outline-sky-600 p-[13.5px] py-[11px] ' />
+                      <input onChange={handleChange}
+                        required className='border-[#d5d5d5] rounded-md border w-full outline-sky-600 p-[13.5px] py-[11px] '
+                        name='securityCode' value={formData.securityCode} type='text' placeholder='Security code' />
                       <div className='absolute right-3'><AiOutlineQuestionCircle className='text-[grey]' /></div>
                     </div>
                   </div>
-                  <input className='border-[#d5d5d5] border p-[13.5px] py-[11px] rounded-md outline-sky-600' type='text' placeholder='Name on card' />
+                  <input onChange={handleChange}
+                    className='border-[#d5d5d5] border p-[13.5px] py-[11px] rounded-md outline-sky-600'
+                    name='cardName' value={formData.cardName} type='text' placeholder='Name on card' />
                   <div className='flex gap-2 items-center text-[14px]'>
-                    <input className='border-[#d5d5d5]' name='billingBox' type='checkBox' id='checkBox ' defaultChecked />
-                    <label for='checkBox'>Use shipping address as billing address</label>
+                    <input onChange={handleChange}
+                      className='border-[#d5d5d5]'
+                      name='billingBox' checked={formData.billingBox} type='checkBox' id='shippingAsBilling' />
+                    <label htmlFor='shippingAsBilling'>Use shipping address as billing address</label>
                   </div>
                   <div className='flex gap-3 flex-col h-0 overflow-hidden'>
                     <h2 className='text-[17px] font-medium'>Billing address</h2>
                     <div className='relative'>
                       <label className='absolute text-[grey] text-[13px] pl-[15px] pt-[9px]'>Country/Region</label>
-                      <select required className='border-[#d5d5d5]  border rounded-md pt-[21px] pr-[30px] pl-[11px] pb-[11px] outline-sky-600 w-full'
-                        name='billingCelectCountry' >
+                      <select onChange={handleChange}
+                        required className='border-[#d5d5d5]  border rounded-md pt-[21px] pr-[30px] pl-[11px] pb-[11px] outline-sky-600 w-full'
+                        name='billingCountry' value={formData.billingCountry} >
                         <option>India</option>
                         <option>US</option>
                         <option>America</option>
@@ -144,20 +177,32 @@ const CheckOutPage = () => {
                     </div>
 
                     <div className='flex gap-5'>
-                      <input className='border-[#d5d5d5] border rounded-md p-[13.5px] py-[11px] w-1/2 outline-sky-600 ' name='billingFirstName' type='text' placeholder='First Name (optional)' />
-                      <input required className='border-[#d5d5d5] border rounded-md p-[13.5px] py-[11px] w-1/2 outline-sky-600' name='billingLastName' type='text' placeholder='last Name' />
+                      <input onChange={handleChange}
+                        className='border-[#d5d5d5] border rounded-md p-[13.5px] py-[11px] w-1/2 outline-sky-600 '
+                        name='billingFirstName' value={formData.billingFirstName} type='text' placeholder='First Name (optional)' />
+                      <input onChange={handleChange}
+                        className='border-[#d5d5d5] border rounded-md p-[13.5px] py-[11px] w-1/2 outline-sky-600'
+                        name='billingLastName' value={formData.billingLastName} type='text' placeholder='last Name' />
                     </div>
 
                     <div className='flex items-center relative '>
-                      <input required placeholder='Address' name='billingAddress' type='text' className='border-[#d5d5d5] rounded-md border w-full outline-sky-600 p-[13.5px] py-[11px] ' />
+                      <input onChange={handleChange}
+                        className='border-[#d5d5d5] rounded-md border w-full outline-sky-600 p-[13.5px] py-[11px] '
+                        name='billingAddress' value={formData.billingAddress} type='text' placeholder='Address' />
                       <div className='absolute right-3'><CiSearch /></div>
                     </div>
 
-                    <input placeholder='Apartment, suit, etc. (optional)' name='billingApartment' type='text' className='border-[#d5d5d5] rounded-md border w-full outline-sky-600 p-[13.5px] py-[11px] ' />
+                    <input onChange={handleChange}
+                      className='border-[#d5d5d5] rounded-md border w-full outline-sky-600 p-[13.5px] py-[11px] '
+                      name='billingApartment' value={formData.billingApartment} type='text' placeholder='Apartment, suit, etc. (optional)' />
 
                     <div className='flex gap-5'>
-                      <input required className='border-[#d5d5d5] rounded-md border p-[13.5px] py-[11px] w-1/2 outline-sky-600 ' name='billingPostalCode' type='text' placeholder='Postal Code' />
-                      <input required className='border-[#d5d5d5] rounded-md border p-[13.5px] py-[11px] w-1/2 outline-sky-600' name='billingCity' type='text' placeholder='City' />
+                      <input onChange={handleChange}
+                        className='border-[#d5d5d5] rounded-md border p-[13.5px] py-[11px] w-1/2 outline-sky-600 '
+                        name='billingPostalCode' value={formData.billingPostalCode} type='text' placeholder='Postal Code' />
+                      <input onChange={handleChange}
+                        className='border-[#d5d5d5] rounded-md border p-[13.5px] py-[11px] w-1/2 outline-sky-600'
+                        name='billingCity' value={formData.billingCity} type='text' placeholder='City' />
                     </div>
                   </div>
                 </div>

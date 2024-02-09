@@ -8,7 +8,7 @@ const GoToTop = () => {
     }
     const heightReached = () => {
         let toShow = 3500;
-        console.log(document.documentElement.scrollTop);
+        // console.log(document.documentElement.scrollTop);
         let windowHeight = document.documentElement.scrollTop;
 
         if (windowHeight > toShow) {
@@ -17,10 +17,11 @@ const GoToTop = () => {
     }
     useEffect(() => {
         window.addEventListener("scroll", heightReached);
+        return()=>window.removeEventListener('scroll',heightReached);
     }, [])
     return (
         show && (
-            <div onClick={goToTop}><IoIosArrowUp className='w-[2%] h-[2%] text-[grey] ' /></div>
+            <div onClick={goToTop} className='flex justify-end cursor-pointer'><IoIosArrowUp className='w-[2%] h-[2%] text-[grey] ' /></div>
         )
     )
 }
